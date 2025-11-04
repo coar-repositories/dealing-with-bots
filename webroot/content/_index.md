@@ -20,6 +20,6 @@ It provides:
 <img src="/images/dealing-with-bots-process-process.png" style="max-width: 700px;" />
 
 
-While it is possible to jump straight to the process for dealing with bots, it is recommended to read the context, problem-statement and model sections first, in order to fully approeciate the thinking behind the process.
+While it is possible to jump straight to the process for dealing with bots, it is recommended to read the context, problem-statement and model sections first, in order to fully appreciate the thinking behind the process.
 
 This toolkit is the primary output of COAR's [Dealing With Bots Task Group](./task-group)

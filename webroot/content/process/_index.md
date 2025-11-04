@@ -13,3 +13,4 @@ This process has three phases: _Preparation_, _Protection_ and _Mitigation_. The
 For the purpose of this framework the term *repository* may sometimes imply the involvement of these other actors.
 
 ![Dealing with Bots Process Diagram](/images/dealing-with-bots-process-process.png)
+

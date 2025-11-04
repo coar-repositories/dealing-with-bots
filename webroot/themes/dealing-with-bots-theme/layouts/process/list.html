@@ -1,28 +1,39 @@
 {{ define "main" }}
 	<h1>{{ .Title }}</h1>
   {{ .Content }}
-  {{ range .Data.Pages }}
-		<hr/>
-		<h2>{{ .Title }}</h2>
-				{{ partial "process_phase" (dict "page" . "fullContent" false) }}
-{{/*		<div class="row">*/}}
-{{/*			<div class="col-md-9">*/}}
-{{/*          {{ .Content }}*/}}
-{{/*			</div>*/}}
-{{/*			<div class="col-md-3">*/}}
-{{/*				<h4>Useful Tools for this Stage </h4>*/}}
-{{/*          {{ with .Params.tools }}*/}}
-{{/*							<ul>*/}}
-{{/*              {{ range . }}*/}}
-{{/*                  {{ $tool_page := site.GetPage (printf "tools/%s/index.md" .) }}*/}}
-{{/*                  {{ with $tool_page }}*/}}
-{{/*										<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>*/}}
-{{/*                  {{ end }}*/}}
-{{/*              {{ end }}*/}}
-{{/*							</ul>*/}}
-{{/*          {{ end }}*/}}
-{{/*			</div>*/}}
-{{/*		</div>*/}}
+{{/*	<div class="row">*/}}
+{{/*      {{ range .Data.Pages }}*/}}
+{{/*				<div class="col">*/}}
+{{/*					<div class="card">*/}}
+{{/*						<div class="card-header">*/}}
+{{/*                <h4>{{ .Title }}</h4>*/}}
+{{/*							<h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>*/}}
+{{/*						</div>*/}}
+{{/*						<div class="card-body">*/}}
+{{/*                {{ .Description | markdownify }}*/}}
+{{/*						</div>*/}}
+{{/*						<div class="card-footer">*/}}
+{{/*							<div class="text-end"><a href="{{ .Permalink }}">Read more...</a></div>*/}}
+{{/*						</div>*/}}
+{{/*					</div>*/}}
+{{/*				</div>*/}}
+{{/*      {{ end }}*/}}
+{{/*	</div>*/}}
+<br/>
+	<div class="row">
+      {{ range .Data.Pages }}
+				<div class="col">
+					<h2>{{ .Title }}</h2>
+            {{ .Description | markdownify }}
+					<div class="text-end"><a href="{{ .Permalink }}">Read more...</a></div>
+				</div>
+      {{ end }}
+	</div>
 
-  {{ end }}
+
+  {{/*  {{ range .Data.Pages }}*/}}
+  {{/*		<hr/>*/}}
+  {{/*		<h2>{{ .Title }}</h2>*/}}
+  {{/*				{{ partial "process_phase" (dict "page" . "fullContent" false) }}*/}}
+  {{/*  {{ end }}*/}}
 {{ end }}
