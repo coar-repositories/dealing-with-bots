@@ -1,5 +1,5 @@
 ---
-title: A Process for Managing Visitors
+title: A Process for Managing Bots
 date: 2024-12-16
 draft: false
 menu:
