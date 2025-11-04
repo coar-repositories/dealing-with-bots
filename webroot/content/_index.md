@@ -7,6 +7,9 @@ menu:
     weight: 10
 ---
 
+_**TL;DR**: If you are in a hurry, you can skip to a [some pragmatic advice for dealing with bots](/quick-summary)._
+
+## Introduction
 This website provides a toolkit for repository managers who face the challenge of mitigating the effects, on their repositories, of badly behaved, automated Web clients such as crawling or harvesting systems.
 
 It provides:
@@ -22,4 +25,4 @@ It provides:
 
 While it is possible to jump straight to the process for dealing with bots, it is recommended to read the context, problem-statement and model sections first, in order to fully appreciate the thinking behind the process.
 
-This toolkit is the primary output of COAR's [Dealing With Bots Task Group](./task-group)
+This toolkit is the primary output of COAR's [Dealing With Bots Task Group](/about)

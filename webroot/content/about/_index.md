@@ -1,5 +1,5 @@
 ---
-title: Task Group
+title: About
 date: 2024-12-16
 draft: false
 menu:
@@ -7,7 +7,10 @@ menu:
     weight: 100
 ---
 
+## The Dealing With Bots COAR Task Group
 The _Dealing With Bots COAR Task Group_ was formed, by invitation, in July 2025. Its remit is to investigate the phenomenon of sudden and dramatic increase in the deleterious impact on repository systems of the behaviour of unregulated "bad bots" (web-crawlers and other harvesting systems).
+
+This website is the primary output of the Task Group.
 
 ## Goals
 The Task Group has set itself the following goals:
