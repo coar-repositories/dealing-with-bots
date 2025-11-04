@@ -2,6 +2,7 @@
 title: Rate Limiting
 date: 2024-12-16
 draft: false
+recommended: true
 ---
 
 Sometimes it is more appropriate to limit the rate of access that one or more clients have to the repository. Preferred rates of access can be indicated in [robots.txt](/tools/robots-txt).

@@ -15,11 +15,13 @@
               {{- partial "menu_main_item" . }}
           {{ end }}
 			</ul>
-{{/*			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">*/}}
-{{/*				<li class="nav-item">*/}}
-{{/*					<a class="nav-link external-link" aria-current="page" href="https://rdms.rd.ruhr-uni-bochum.de/">Go to ReSeeD</a>*/}}
-{{/*				</li>*/}}
-{{/*			</ul>*/}}
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+            {{- with index site.Menus "main-right" }}
+                {{- partial "menu_main_item" . }}
+            {{ end }}
+				</li>
+			</ul>
         {{/*			<form class="d-flex" role="search">*/}}
         {{/*				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>*/}}
         {{/*				<button class="btn btn-outline-success" type="submit">Search</button>*/}}
