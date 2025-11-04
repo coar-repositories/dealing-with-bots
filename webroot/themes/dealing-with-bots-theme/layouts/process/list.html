@@ -1,0 +1,28 @@
+{{ define "main" }}
+	<h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ range .Data.Pages }}
+		<hr/>
+		<h2>{{ .Title }}</h2>
+				{{ partial "process_phase" (dict "page" . "fullContent" false) }}
+{{/*		<div class="row">*/}}
+{{/*			<div class="col-md-9">*/}}
+{{/*          {{ .Content }}*/}}
+{{/*			</div>*/}}
+{{/*			<div class="col-md-3">*/}}
+{{/*				<h4>Useful Tools for this Stage </h4>*/}}
+{{/*          {{ with .Params.tools }}*/}}
+{{/*							<ul>*/}}
+{{/*              {{ range . }}*/}}
+{{/*                  {{ $tool_page := site.GetPage (printf "tools/%s/index.md" .) }}*/}}
+{{/*                  {{ with $tool_page }}*/}}
+{{/*										<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>*/}}
+{{/*                  {{ end }}*/}}
+{{/*              {{ end }}*/}}
+{{/*							</ul>*/}}
+{{/*          {{ end }}*/}}
+{{/*			</div>*/}}
+{{/*		</div>*/}}
+
+  {{ end }}
+{{ end }}

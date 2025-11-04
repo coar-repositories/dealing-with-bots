@@ -1,0 +1,208 @@
+@import 'variables';
+
+html {
+  background-color: white;
+  //max-width: 1920px;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+body {
+  background-color: white;
+}
+
+body, p, ol, ul, td {
+  font-family: $main-content-font;
+  font-weight: $main-content-font-weight-default;
+  color: $main-content-text-color;
+  font-size: $main-content-font-size;
+}
+
+pre {
+  padding: 15px;
+  background-color: #F7F7F7;
+  font-size: 70%;
+}
+
+code, span.monospace {
+  font-family: $monospace-font;
+  font-weight: $monospace-font-weight-default;
+  color: $code-text-color;
+}
+
+a, a:visited, a:hover {
+  color: $link-colour;
+}
+
+a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a.undecorated-link {
+  text-decoration: none;
+  color: $main-content-text-color;
+}
+
+a.btn-secondary {
+  color: white;
+}
+
+a.header-link {
+  text-decoration: none;
+}
+
+a.header-link:hover {
+  text-decoration: underline;
+}
+
+a.nav-link, a.nav-link:visited, a.nav-link:hover, a.dropdown-item {
+  text-decoration: none;
+  color: $main-content-text-color;
+  font-weight: normal;
+}
+
+a.external-link::after {
+  position: absolute;
+  content: '\F1C5';
+  justify-content: flex-end;
+  font-family: "bootstrap-icons", serif;
+  margin-left: 0.25em;
+  font-size: 0.7em;
+}
+
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, {
+  text-decoration: none;
+  color: $header-link-colour;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  color: $header-link-colour;
+}
+
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited, {
+  color: $header-link-colour;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+  font-weight: $heading-font-weight-default;
+  color: $heading-text-color;
+}
+
+h1 {
+  border-bottom: 2px solid #555555;
+  text-align: center;
+  font-size: 2.0em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+h1.document {
+  border: none;
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.6em;
+  //border-bottom: 1px solid #555555;
+}
+
+h3 {
+  font-size: 1.4em
+}
+
+h4 {
+  font-size: 1.2em
+}
+
+h5 {
+  font-size: 1.1em
+}
+
+h6 {
+  font-size: 1.0em
+}
+
+
+blockquote {
+  font-style: italic;
+  margin-left: 20px;
+  padding: 10px 10px 1px;
+  margin-right: 20px;
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  //border: 1px solid #cdcdcd;
+  background-color: $panel-background-colour;
+}
+
+
+div.right-aligned {
+  text-align: right;
+}
+
+.invisible {
+  display: inline-block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  position: absolute;
+  width: 0;
+}
+
+mark {
+  background-color: yellow;
+}
+
+.read-more {
+  text-align: right;
+  font-size: 90%;
+  font-style: italic;
+}
+
+.field-name {
+  text-align: right;
+  font-weight: normal;
+}
+
+.field-name::after {
+  content: ": ";
+}
+
+.badge-header {
+  font-size: 1.2em;
+  text-align: right;
+}
+
+.badge a {
+  text-decoration: none;
+}
+
+.badge a:hover {
+  text-decoration: underline;
+}
+
+span.context-badge-menu {
+  margin-left: 5px;
+  font-size: 60%;
+  vertical-align: middle
+}
+
+div.tools-callout {
+  background-color: lightyellow;
+  border: 1px solid #cdcdcd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+div.tools-callout, div.tools-callout ul {
+  font-size: 90%;
+}

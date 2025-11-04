@@ -1,0 +1,8 @@
+{{- $page := .page }}
+{{- range .menuEntries }}
+    <h1 class="document">{{ .Page.Title }}</h1>
+				{{ .Page.Content }}
+    {{- with .Children }}
+			{{- partial "document_menu_page.html" (dict "page" $page "menuEntries" . ) }}
+    {{- end }}
+{{- end }}

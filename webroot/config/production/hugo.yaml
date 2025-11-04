@@ -1,0 +1,5 @@
+#baseURL: ""
+buildDrafts: false
+params:
+  showDebugInfo: false
+  enableAnalytics: true

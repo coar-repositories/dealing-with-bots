@@ -1,0 +1,39 @@
+img {
+  max-width: 99%;
+  max-height: 400px;
+  display: block;
+  //margin: 15px auto;
+  //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  //border: 0.5px solid #cdcdcd;
+  margin: 15px auto;
+}
+
+span.img-caption {
+  font-weight: bold;
+  font-style:  italic;
+  font-size: 85%;
+}
+
+img#header-logo {
+  //height: 40px;
+  max-height: 80px;
+  box-shadow: none;
+  border: none;
+}
+
+#header-icon-bar img {
+  width: 24px;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 0px;
+  float: right;
+  box-shadow: none;
+  opacity: 75%;
+}
+
+//.user-guide-screenshot {
+//  width: 50% !important;
+//  float: left;
+//}

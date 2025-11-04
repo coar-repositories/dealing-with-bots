@@ -1,0 +1,75 @@
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='width=device-width,initial-scale=1' name='viewport'>
+<!-- The above 2 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<link href='https://fonts.googleapis.com' rel='preconnect'>
+<link crossorigin='true' href='https://fonts.gstatic.com' rel='preconnect'>
+<meta property="og:title" content="{{ .Title }}"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="{{ .Permalink }}"/>
+<meta property="og:site_name" content="{{ site.Title }}"/>
+{{hugo.Generator}}
+
+<title>{{ site.Title }}{{ if .Title }}: {{ .Title }}{{ end }}</title>
+
+{{ $bootstrapStyle := resources.Get "css/bootstrap.min.css" | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $bootstrapStyle.Permalink }}">
+
+{{ $variablesStyle := resources.Get "css/_variables.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $variablesStyle.Permalink }}">
+
+{{/*bootsrap-icons are not in the asset pipeline*/}}
+<link rel="stylesheet" href="/css/bootstrap-icons.min.css">
+
+{{ $datatablesBootstrapStyle := resources.Get "css/dataTables.bootstrap5.min.css" | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $datatablesBootstrapStyle.Permalink }}">
+
+{{ $mainStyle := resources.Get "css/main.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $mainStyle.Permalink }}">
+
+{{ $imageStyle := resources.Get "css/images.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $imageStyle.Permalink }}">
+
+{{ $blockQuotesStyle := resources.Get "css/blockquotes.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $blockQuotesStyle.Permalink }}">
+
+{{ $headerAndFooterStyle := resources.Get "css/header_and_footer.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $headerAndFooterStyle.Permalink }}">
+
+{{ $tablesStyle := resources.Get "css/tables.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $tablesStyle.Permalink }}">
+
+{{ $cardsStyle := resources.Get "css/cards.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $cardsStyle.Permalink }}">
+
+{{ $mermaidStyle := resources.Get "css/mermaid.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $mermaidStyle.Permalink }}">
+
+{{ $syntaxPageStyle := resources.Get "css/syntax_pygments.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $syntaxPageStyle.Permalink }}">
+
+{{ $jqueryJS := resources.Get "js/jquery-3.7.0.js" | resources.Minify | resources.Fingerprint }}
+<script type="text/javascript" src="{{ $jqueryJS.Permalink }}"></script>
+
+{{ $bootstrapJS := resources.Get "js/bootstrap.bundle.js" | resources.Minify  | resources.Fingerprint }}
+<script type="text/javascript" src="{{ $bootstrapJS.Permalink }}"></script>
+
+{{ $datatablesJS := resources.Get "js/jquery.dataTables.min.js" | resources.Fingerprint }}
+<script type="text/javascript" src="{{ $datatablesJS.Permalink }}"></script>
+
+{{ $datatablesBootstrap5JS := resources.Get "js/dataTables.bootstrap5.min.js" | resources.Fingerprint }}
+<script type="text/javascript" src="{{ $datatablesBootstrap5JS.Permalink }}"></script>
+
+{{ $mainJS := resources.Get "js/main.js" | resources.Minify | resources.Fingerprint }}
+<script type="text/javascript" src="{{ $mainJS.Permalink }}"></script>
+
+{{/*<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">*/}}
+{{/*<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">*/}}
+{{/*<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">*/}}
+{{/*<link rel="manifest" href="/site.webmanifest">*/}}
+{{/*<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#787878">*/}}
+{{/*<meta name="msapplication-TileColor" content="#da532c">*/}}
+{{/*<meta name="theme-color" content="#ffffff">*/}}
+
+
+
+

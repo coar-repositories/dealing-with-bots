@@ -1,0 +1,58 @@
+{{- range . }}
+    {{ if .HasChildren }}
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {{ .Name }}
+				</a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ range .Children }}
+							<li><a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
+				</ul>
+			</li>
+    {{ else }}
+
+        {{ if eq .Parent "" }}
+            {{- if page.IsMenuCurrent .Menu . }}
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="{{ .URL}} ">{{ .Name }}</a>
+							</li>
+            {{ else }}
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="{{ .URL}} ">{{ .Name }}</a>
+							</li>
+            {{ end}}
+        {{ end }}
+
+    {{ end }}
+
+{{- end }}
+
+
+{{/*    {{- $attrs := dict "href" .URL }}*/}}
+{{/*    {{- if page.IsMenuCurrent .Menu . }}*/}}
+{{/*        {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}*/}}
+{{/*    {{- else if page.HasMenuCurrent .Menu .}}*/}}
+{{/*        {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}*/}}
+{{/*    {{- end }}*/}}
+{{/*    {{- $name := .Name }}*/}}
+{{/*    {{- with .Identifier }}*/}}
+{{/*        {{- with T . }}*/}}
+{{/*            {{- $name = . }}*/}}
+{{/*        {{- end }}*/}}
+{{/*    {{- end }}*/}}
+{{/*		<li>*/}}
+{{/*			<a*/}}
+{{/*              {{- range $k, $v := $attrs }}*/}}
+{{/*                  {{- with $v }}*/}}
+{{/*                      {{- printf " %s=%q" $k $v | safeHTMLAttr }}*/}}
+{{/*                  {{- end }}*/}}
+{{/*              {{- end -}}*/}}
+{{/*			>{{ $name }}</a>*/}}
+{{/*        {{- with .Children }}*/}}
+{{/*					<ul>*/}}
+{{/*              {{- partial "user_guide/menu_item.html" (dict "page" page "menuEntries" . ) }}*/}}
+{{/*					</ul>*/}}
+{{/*        {{- end }}*/}}
+{{/*		</li>*/}}

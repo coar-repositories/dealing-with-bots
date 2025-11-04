@@ -1,0 +1,41 @@
+{{ $alertType := .AlertType }}
+{{ $title := .AlertTitle}}
+{{ $text := .Text }}
+
+{{ $bootstrapIconMap := dict
+"caution" "bi-exclamation-octagon"
+"important" "bi-info-square"
+"note" "bi-info-circle"
+"tip" "bi-lightbulb"
+"warning" "bi-exclamation-triangle"
+}}
+
+{{ $bootstrapAlertTypeMap := dict
+"caution" "warning"
+"important" "primary"
+"note" "info"
+"tip" "success"
+"warning" "danger"
+}}
+
+{{ with $alertType }}
+
+	<div class="alert alert-{{index $bootstrapAlertTypeMap $alertType }} " role="alert">
+		<span class="bi {{index $bootstrapIconMap $alertType }} alert-title">
+      {{ with $title }}
+          {{ . }}
+      {{ else }}
+          {{ title $alertType }}
+      {{ end }}
+
+		</span>
+			{{ $text }}
+	</div>
+
+{{ else }}
+	<blockquote>
+      {{ $text }}
+	</blockquote>
+{{ end }}
+
+

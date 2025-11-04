@@ -1,0 +1,21 @@
+<nav id="breadcrumbs" aria-label="breadcrumbs" data-pagefind-ignore>
+	<ol class="breadcrumb">
+      {{- range .Ancestors.Reverse }}
+          {{ $breadcrumbTitle := .Title }}
+          {{ with .Params.breadcrumb_title }}
+              {{ $breadcrumbTitle = . }}
+          {{ end }}
+					<li class="breadcrumb-item">
+						<a href="{{ .RelPermalink }}">{{ $breadcrumbTitle }}</a>
+					</li>
+					<span class="" aria-hidden="true">&nbsp;/&nbsp;</span>
+      {{- end }}
+      {{ $breadcrumbTitle := .Title }}
+      {{ with .Params.breadcrumb_title }}
+          {{ $breadcrumbTitle = . }}
+      {{ end }}
+		<li class="breadcrumb-item active">
+        {{ $breadcrumbTitle }}
+		</li>
+	</ol>
+</nav>

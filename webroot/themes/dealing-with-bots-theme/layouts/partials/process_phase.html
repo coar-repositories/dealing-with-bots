@@ -1,0 +1,27 @@
+{{ $fullContent := .fullContent}}
+{{ with .page }}
+<div class="row">
+	<div class="col-md-9">
+			{{ if $fullContent }}
+      {{ .Content }}
+		{{ else }}
+			{{ .Description | markdownify }}
+		{{ end }}
+	</div>
+	<div class="col-md-3">
+		<div class="tools-callout">
+			<h4>Tools</h4>
+        {{ with .Params.tools }}
+					<ul>
+              {{ range . }}
+                  {{ $tool_page := site.GetPage (printf "tools/%s/index.md" .) }}
+                  {{ with $tool_page }}
+										<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                  {{ end }}
+              {{ end }}
+					</ul>
+        {{ end }}
+		</div>
+	</div>
+</div>
+{{ end }}

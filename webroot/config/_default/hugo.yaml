@@ -1,0 +1,86 @@
+---
+theme: "dealing-with-bots-theme"
+languageCode: "en-gb"
+uglyURLs: false
+title: "Dealing With Bots"
+enableRobotsTXT: true
+enableGitInfo: false
+disablePathToLower: true
+services:
+  rss:
+    limit: 20
+outputs:
+  home:
+    - html
+  section:
+    - html
+    - rss
+  taxonomy:
+    - html
+  term:
+    - html
+  page:
+    - html
+taxonomies:
+  tag: "tags"
+caches:
+  getjson:
+    dir: :cacheDir/:project
+    maxAge: 5s
+  getresource:
+    dir: :cacheDir/:project
+    maxAge: 5s
+  getcsv:
+    dir: :cacheDir/:project
+    maxAge: 5s
+params:
+  gitHubRepoForSources: "https://github.com/coar-repositories/dealing-with-bots"
+markup:
+  tableOfContents:
+    endLevel: 4
+    ordered: false
+    startLevel: 2
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: false
+      strikethrough: false
+      table: true
+      taskList: true
+      typographer: false
+      extras:
+        delete:
+          enable: true
+        insert:
+          enable: true
+        mark:
+          enable: true
+        subscript:
+          enable: true
+        superscript:
+          enable: true
+    parser:
+      attribute:
+        block: true
+        title: true
+      autoHeadingID: true
+      wrapStandAloneImageWithinParagraph: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    lineAnchors: ""
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: false
+    style: pygments
+    tabWidth: 4
+---

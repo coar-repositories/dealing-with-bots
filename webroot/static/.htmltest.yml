@@ -1,0 +1,17 @@
+DirectoryPath: "."
+EnforceHTTPS: false
+IgnoreURLs:
+  - "https://fonts.googleapis.com"
+  - "https://fonts.gstatic.com"
+  - "/pagefind/pagefind-ui.css"
+  - "/pagefind/pagefind-ui.js"
+  - "https://gitlab.ruhr-uni-bochum.de/-/project/864/uploads/6105789a5a5138db3b2c1c285c198a0d/Screenshot_2024-12-04_at_04.04.29.png" #This is excluded because it is behind authentication
+  - "https://gitlab.ruhr-uni-bochum.de/-/project/864/uploads/4d09369313ca5f08e9d08d13570ff2db/analysis_report_49_20409_12-03_21-23-11.csv" #This is excluded because it is behind authentication
+  - "https://gitlab.ruhr-uni-bochum.de/-/project/864/uploads/e1e8a22d51c176721c4455664b6aa6f6/analysis_report_49_20410_12-03_21-23-20.csv" #This is excluded because it is behind authentication
+  - "https://gitlab.ruhr-uni-bochum.de/researchdata/rdms/-/blob/feature/shibboleth_auth/hyrax/config/initializers/devise.rb#L299-310" #This is excluded because it is behind authentication
+  - "https://gitlab.ruhr-uni-bochum.de/-/project/864/uploads/afa04d2c5f75c5e5a7d5e69248a1f58e/Example_RUB_import_data.zip" #This is excluded because it is behind authentication
+  - "https://gitlab.ruhr-uni-bochum.de/-/project/864/uploads/671860fcf003818d516cf4a6d11b8e20/Example_RUB_import_data.zip" #This is excluded because it is behind authentication
+#  - "https://rdms.cottagelabs.com/users/auth/saml?locale=en"
+IgnoreDirs: []
+IgnoreAltMissing: true
+#CacheExpires: "6h"

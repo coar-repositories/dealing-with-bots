@@ -1,0 +1,17 @@
+<ul>
+    {{ range .Pages.ByTitle }}
+        {{ if .IsSection }}
+					<li>
+						<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+					</li>
+          {{ partial "tree" . }}
+        {{ end }}
+    {{ end }}
+    {{ range .Pages.ByTitle }}
+        {{ if not .IsSection }}
+					<li>
+						<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+					</li>
+        {{ end }}
+    {{ end }}
+</ul>
