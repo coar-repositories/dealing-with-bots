@@ -5,28 +5,47 @@
 	<br/>
 	<div class="row">
       {{ range .Data.Pages }}
-				<div class="col">
-					<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-            {{ .Description | markdownify }}
-					(<a href="{{ .Permalink }}">Read more</a>)
-            {{/*					<div class="text-end"><a href="{{ .Permalink }}">Read more!</a></div>*/}}
-					<br/>
-					<br/>
-					Tools which are <b>recommended</b> and relevant to this phase include:
-            {{ with .Params.tools }}
-							<ul>
-                  {{ range . }}
-                      {{ $tool_page := site.GetPage (printf "tools/%s/index.md" .) }}
-                      {{ with $tool_page }}
-                          {{ if .Params.recommended }}
-														<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                          {{ end}}
+          {{ $recommendedTools := slice}}
+          {{ $notRecommendedTools := slice}}
+          {{ with .Params.tools }}
+              {{ range . }}
+                  {{ $tool_page := site.GetPage (printf "tools/%s/index.md" .) }}
+                  {{ with $tool_page }}
+                      {{ if .Params.recommended }}
+                          {{ $recommendedTools = $recommendedTools | append $tool_page }}
+                      {{ else }}
+                          {{ $notRecommendedTools = $notRecommendedTools | append $tool_page }}
                       {{ end }}
                   {{ end }}
-							</ul>
-            {{ end }}
+              {{ end }}
+          {{ end }}
 
-				</div>
+
+					<div class="col">
+						<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+              {{ .Description | markdownify }}
+						(<a href="{{ .Permalink }}">Read more</a>)
+						<br/>
+						<br/>
+              {{ with $recommendedTools }}
+								<b>Recommended</b> tools include:
+								<ul>
+                    {{ range . }}
+											<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+								</ul>
+              {{ end }}
+
+              {{ with $notRecommendedTools }}
+								Tools which are <b>not</b> recommended include:
+								<ul>
+                    {{ range . }}
+											<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+								</ul>
+              {{ end }}
+
+					</div>
       {{ end }}
 	</div>
 
