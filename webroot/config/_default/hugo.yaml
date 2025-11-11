@@ -21,6 +21,10 @@ outputs:
     - html
   page:
     - html
+menus:
+  main:
+    - name: Background
+      weight: 11
 taxonomies:
   tag: "tags"
 caches:

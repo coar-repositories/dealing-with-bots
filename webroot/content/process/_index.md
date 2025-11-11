@@ -4,7 +4,7 @@ date: 2024-12-16
 draft: false
 menu:
   main:
-    name: Process
+    name: A Process for Managing Bots
     weight: 50
 ---
 

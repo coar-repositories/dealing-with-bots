@@ -5,7 +5,7 @@
             {{ .Name }}
 				</a>
 				<ul class="dropdown-menu">
-					<li><a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a></li>
+{{/*					<li><a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a></li>*/}}
             {{ range .Children }}
 							<li><a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a></li>
             {{ end }}

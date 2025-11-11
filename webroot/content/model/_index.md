@@ -1,11 +1,12 @@
 ---
-title: A Model for Characterising Visitors
+title: A Model for Characterising Bots
 date: 2024-12-16
 draft: false
 menu:
   main:
     name: Model
     weight: 40
+    parent: Background
 ---
 
 It is clear that, in this rapidly changing internet environment, repository services face a challenge in deciding how to deal with bots as a majority subset of their visitors. The following model is intended to help repository managers understand and respond to this challenge.

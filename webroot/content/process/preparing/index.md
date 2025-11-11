@@ -17,8 +17,8 @@ The _preparation_ phase is for actions which can be carried out in advance of an
 
 In this phase the repository service determines the types of visitors it wishes to welcome or make unwelcome. As a rule, the _raison d'être_ for a repository is to provide wide and open access to its content - both to human visitors, and to well-behaved bots. Some example actions which might be undertaken in this phase include:
 
-- Creating and deploying a [robots.txt](/tools-and-strategies/robots-txt) file
-- Writing and publishing some [Terms of Service](/tools-and-strategies/tos) and ensuring that licensing is clearly articulated
-- [Upgrade your repository](/tools-and-strategies/upgrade-repository) system if necessary, and consider increasing the hardware resources available to it.
-- Configuring a [network firewall](/tools-and-strategies/network-firewall)  to block certain IP addresses (or ranges of addresses)
+- Creating and deploying a [robots.txt](/tools-and-strategies/robots-txt/) file
+- Writing and publishing some [Terms of Service](/tools-and-strategies/tos/) and ensuring that licensing is clearly articulated
+- [Upgrade your repository](/tools-and-strategies/upgrade-repository/) system if necessary, and consider increasing the hardware resources available to it.
+- Configuring a [network firewall](/tools-and-strategies/network-firewall/)  to block certain IP addresses (or ranges of addresses)
 - Configuring a Web Application Firewall (WAF) to inspect HTTP headers and filter traffic according to certain criteria such as "User Agent".
