@@ -1,0 +1,17 @@
+{{ define "main" }}
+	<h1>{{ .Title }}</h1>
+  {{ .Content }}
+		<h2>Recommended Tools and Strategies</h2>
+			<ul>
+          {{ range where .Data.Pages "Params.recommended" true }}
+						<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+          {{ end }}
+			</ul>
+
+	<h2>Tools and Strategies which are NOT recommended</h2>
+	<ul>
+      {{ range where .Data.Pages "Params.recommended" false }}
+				<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+	</ul>
+{{ end }}

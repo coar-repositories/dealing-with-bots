@@ -9,7 +9,7 @@
           {{ $notRecommendedTools := slice}}
           {{ with .Params.tools }}
               {{ range . }}
-                  {{ $tool_page := site.GetPage (printf "tools/%s/index.md" .) }}
+                  {{ $tool_page := site.GetPage (printf "tools-and-strategies/%s/index.md" .) }}
                   {{ with $tool_page }}
                       {{ if .Params.recommended }}
                           {{ $recommendedTools = $recommendedTools | append $tool_page }}

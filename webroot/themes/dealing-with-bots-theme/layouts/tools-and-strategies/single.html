@@ -1,0 +1,12 @@
+{{ define "main" }}
+	<div class="text-end">
+      {{ if .Params.recommended }}
+				<span class="badge text-bg-success header-badge">Recommended</span>
+      {{ else }}
+				<span class="badge text-bg-danger header-badge">Not Recommended</span>
+      {{ end }}
+	</div>
+
+	<h1>{{ .Title }}</h1>
+  {{ .Content }}
+{{ end }}

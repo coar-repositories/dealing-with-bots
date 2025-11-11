@@ -12,7 +12,6 @@
 				</ul>
 			</li>
     {{ else }}
-
         {{ if eq .Parent "" }}
             {{- if page.IsMenuCurrent .Menu . }}
 							<li class="nav-item">
@@ -26,33 +25,5 @@
         {{ end }}
 
     {{ end }}
-
 {{- end }}
 
-
-{{/*    {{- $attrs := dict "href" .URL }}*/}}
-{{/*    {{- if page.IsMenuCurrent .Menu . }}*/}}
-{{/*        {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}*/}}
-{{/*    {{- else if page.HasMenuCurrent .Menu .}}*/}}
-{{/*        {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}*/}}
-{{/*    {{- end }}*/}}
-{{/*    {{- $name := .Name }}*/}}
-{{/*    {{- with .Identifier }}*/}}
-{{/*        {{- with T . }}*/}}
-{{/*            {{- $name = . }}*/}}
-{{/*        {{- end }}*/}}
-{{/*    {{- end }}*/}}
-{{/*		<li>*/}}
-{{/*			<a*/}}
-{{/*              {{- range $k, $v := $attrs }}*/}}
-{{/*                  {{- with $v }}*/}}
-{{/*                      {{- printf " %s=%q" $k $v | safeHTMLAttr }}*/}}
-{{/*                  {{- end }}*/}}
-{{/*              {{- end -}}*/}}
-{{/*			>{{ $name }}</a>*/}}
-{{/*        {{- with .Children }}*/}}
-{{/*					<ul>*/}}
-{{/*              {{- partial "user_guide/menu_item.html" (dict "page" page "menuEntries" . ) }}*/}}
-{{/*					</ul>*/}}
-{{/*        {{- end }}*/}}
-{{/*		</li>*/}}
