@@ -8,4 +8,3 @@ weight: 109
 
 In order to protect your repository from badly-behaved bots, you will need to monitor incoming traffic.
 
-==TODO: some tools for monitoring and analysing traffic==

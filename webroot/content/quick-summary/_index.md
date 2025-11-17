@@ -8,7 +8,7 @@ menu:
     weight: 55
 ---
 
-The following steps can be followed to mitigate the effects of badly behaved bots on your repository.
+The following steps can be followed to mitigate the effects of badly behaved bots on your repository. These steps are grouped into three phases: _Preparation_, _Protection_, and _Mitigation_, as defined in the [Process for Managing Bots](/process/).
 
 ## Preparation
 1. Configure and deploy a [robots.txt](/tools-and-strategies/robots-txt/) file for your repository system
