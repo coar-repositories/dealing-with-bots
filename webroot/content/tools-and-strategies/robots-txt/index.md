@@ -16,4 +16,3 @@ One COAR Survey respondent described how, in 2019, they had suffered a service o
 
 The Robots Exclusion Protocol, if implemented correctly, is able to be selective and precise in the bots which it declares to be welcome or unwelcome. However, legitimate services which honour the directives in robots.txt files which they encounter when visiting repositories report that these files are frequently badly configured. There is some anecdotal evidence of legitimate, well-behaved bots being turned away by over-zealously configured robots.txt files.
 
-==TODO: Guidance on well written robots.txt file (+ examples?)==
