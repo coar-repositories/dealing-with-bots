@@ -1,5 +1,5 @@
 ---
-title: Network Firewall
+title: Implement Network Firewall
 date: 2024-12-16
 draft: false
 recommended: true

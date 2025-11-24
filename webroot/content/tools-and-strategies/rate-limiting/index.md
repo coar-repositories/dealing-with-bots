@@ -1,5 +1,5 @@
 ---
-title: Rate Limiting
+title: Implement Rate Limiting
 date: 2024-12-16
 draft: false
 recommended: true
