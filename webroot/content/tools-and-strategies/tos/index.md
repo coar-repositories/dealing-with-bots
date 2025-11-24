@@ -9,4 +9,3 @@ A Terms-of-service document is not likely to be machine-readable, and so not dir
 
 Such terms of service should clearly articulate any licensing which is applied to the use of repository resources.
 
-==TODO: the other task group is articulating guidance on ToS??==
