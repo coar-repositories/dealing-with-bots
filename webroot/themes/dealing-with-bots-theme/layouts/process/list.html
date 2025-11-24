@@ -1,7 +1,6 @@
 {{ define "main" }}
 	<h1>{{ .Title }}</h1>
   {{ .Content }}
-
 	<br/>
 	<div class="row">
       {{ range .Data.Pages }}
@@ -20,7 +19,6 @@
               {{ end }}
           {{ end }}
 
-
 					<div class="col">
 						<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
               {{ .Description | markdownify }}
@@ -30,7 +28,7 @@
               {{ with $recommendedTools }}
 								<b>Recommended</b> tools/strategies include:
 								<ul>
-                    {{ range . }}
+                    {{ range .ByWeight }}
 											<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
                     {{ end }}
 								</ul>

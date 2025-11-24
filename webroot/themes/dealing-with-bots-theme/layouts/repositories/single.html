@@ -1,7 +1,19 @@
 {{ define "main" }}
 	<h1>{{ .Title }}</h1>
-	<b>Homepage:</b> <a href="{{ .Params.homepage }}">{{ .Params.homepage }}</a><br/>
-	<b>Current Supported/Stable Version:</b> {{ .Params.current_stable_version }}<br/>
+
+
+
+	<table class="invisible-layout-table">
+		<tr>
+			<td class="field-name">Homepage</td>
+			<td><a href="{{ .Params.homepage }}">{{ .Params.homepage }}</a></td>
+		</tr>
+		<tr>
+			<td class="field-name">Current Version</td>
+			<td>{{ .Params.current_stable_version }}</td>
+		</tr>
+	</table>
+			<br/>
 
   {{ .Content }}
   {{ with .Resources.Match "*.md" }}
