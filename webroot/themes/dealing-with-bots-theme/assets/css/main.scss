@@ -208,11 +208,11 @@ div.tools-callout {
 //}
 
 div.tldr {
-  border: 2px solid #cdcdcd;
-  background-color: lightyellow;
+  //border: 2px solid #cdcdcd;
+  //background-color: lightyellow;
   text-align: center;
   font-style: italic;
-  font-size: 150%;
+  //font-size: 150%;
   padding: 10px;
   margin-bottom: 30px;
 }
@@ -223,4 +223,10 @@ span.header-badge {
 
 span.inline-badge {
   font-size: 0.7em;
+}
+
+div.specific-repository-systems-using-strategy-delimited-list {
+  border: 1px solid #cdcdcd;
+  background-color: #efefef;
+  padding-left: 10px;
 }

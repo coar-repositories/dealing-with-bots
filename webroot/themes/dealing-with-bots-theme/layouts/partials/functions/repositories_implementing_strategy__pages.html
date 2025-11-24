@@ -1,0 +1,11 @@
+{{ $toolOrStrategyID := . }}
+{{ $repositories := slice }}
+
+{{ range where site.RegularPages  "Section" "eq" "repositories" }}
+    {{ $repository := . }}
+    {{ with .Resources.GetMatch (print $toolOrStrategyID ".md") }}
+        {{ $repositories = $repositories | append $repository }}
+    {{ end }}
+{{ end }}
+
+{{ return $repositories }}

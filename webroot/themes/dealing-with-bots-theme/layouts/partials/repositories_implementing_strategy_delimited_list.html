@@ -1,0 +1,14 @@
+{{ $array := slice}}
+{{ $toolOrStrategyID := .toolOrStrategyID }}
+{{ $withLinks := .withLinks }}
+
+{{ range where site.RegularPages  "Section" "eq" "repositories" }}
+    {{ $repository := . }}
+    {{ with .Resources.GetMatch (print $toolOrStrategyID ".md") }}
+        {{ $array = $array | append (print "<a href='" $repository.Permalink "#" $toolOrStrategyID "'>" ($repository.Title) "</a>")}}
+    {{ else }}
+        {{ $array = $array | append $repository.Title }}
+    {{ end }}
+{{ end }}
+
+{{ delimit $array ", " | markdownify }}

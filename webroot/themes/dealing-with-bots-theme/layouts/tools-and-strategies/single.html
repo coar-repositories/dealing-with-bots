@@ -1,12 +1,33 @@
 {{ define "main" }}
-	<div class="text-end">
-      {{ if .Params.recommended }}
-				<span class="badge text-bg-success header-badge">Recommended</span>
-      {{ else }}
-				<span class="badge text-bg-danger header-badge">Not Recommended</span>
-      {{ end }}
-	</div>
+    {{ $toolOrStrategyID := .File.ContentBaseName }}
+		<div class="text-end">
+        {{ if .Params.recommended }}
+					<span class="badge text-bg-success header-badge">Recommended</span>
+        {{ else }}
+					<span class="badge text-bg-danger header-badge">Not Recommended</span>
+        {{ end }}
+		</div>
 
-	<h1>{{ .Title }}</h1>
-  {{ .Content }}
+		<h1>{{ .Title }}</h1>
+
+    {{/*    {{ with partial "functions/repositories_implementing_strategy__pages.html" $toolOrStrategyID }}*/}}
+    {{/*			<div style="float: right">*/}}
+    {{/*				<h4>Repositories</h4>*/}}
+    {{/*					<ul>*/}}
+    {{/*          {{ range where site.RegularPages  "Section" "eq" "repositories" }}*/}}
+    {{/*              {{ $repository := . }}*/}}
+    {{/*              {{ with .Resources.GetMatch (print $toolOrStrategyID ".md") }}*/}}
+    {{/*                  <li><a href="{{ $repository.Permalink }}#{{ $toolOrStrategyID }}">{{ $repository.Title }}</a></li>*/}}
+    {{/*              {{ end }}*/}}
+    {{/*          {{ end }}*/}}
+    {{/*					</ul>*/}}
+    {{/*			</div>*/}}
+    {{/*    {{ end }}*/}}
+
+    {{ .Content }}
+    {{ with partial "functions/repositories_implementing_strategy__pages.html" $toolOrStrategyID }}
+			<div class="specific-repository-systems-using-strategy-delimited-list">
+				<b>Advice on this strategy for specific repository systems: </b> {{ partial "repositories_implementing_strategy_delimited_list.html" (dict "toolOrStrategyID" $toolOrStrategyID "withLinks" true) }}
+			</div>
+    {{ end }}
 {{ end }}

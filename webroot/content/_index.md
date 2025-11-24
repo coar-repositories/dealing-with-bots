@@ -8,10 +8,9 @@ menu:
 ---
 
 <div class="tldr">
-<b>TL;DR</b>: If you are in a hurry, you can skip to <a href="/quick-summary/">some pragmatic advice for dealing with bots</a>.
+<b>TL;DR</b>: If you are in a hurry, you can skip to a <a href="/quick-summary/"> quick summary </a> of some steps to take for dealing with bots.
 </div>
 
-## Introduction
 This website provides a toolkit for repository managers who face the challenge of mitigating the effects, on their repositories, of badly behaved, automated Web clients such as crawling or harvesting systems.
 
 It includes:

@@ -1,0 +1,14 @@
+{{ define "main" }}
+	<h1>{{ .Title }}</h1>
+	<b>Homepage:</b> <a href="{{ .Params.homepage }}">{{ .Params.homepage }}</a><br/>
+	<b>Current Supported/Stable Version:</b> {{ .Params.current_stable_version }}<br/>
+
+  {{ .Content }}
+  {{ with .Resources.Match "*.md" }}
+		<h2>Tools/Strategies</h2>
+    {{ range . }}
+			<h3><a id="{{ .File.BaseFileName }}">{{ .Title }}</a></h3>
+      {{ .Content | markdownify }}
+    {{ end }}
+  {{ end }}
+{{ end }}

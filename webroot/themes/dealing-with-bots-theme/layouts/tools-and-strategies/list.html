@@ -1,13 +1,47 @@
 {{ define "main" }}
 	<h1>{{ .Title }}</h1>
   {{ .Content }}
-		<h2>Recommended Tools and Strategies</h2>
-			<ul>
-          {{ range where .Data.Pages "Params.recommended" true }}
-						<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-          {{ end }}
-			</ul>
+	<h2>Recommended Tools and Strategies</h2>
+{{/*	<ul>*/}}
+{{/*      {{ range where .Data.Pages "Params.recommended" true }}*/}}
+{{/*          {{ $toolOrStrategyID := .File.ContentBaseName }}*/}}
+{{/*					<li>*/}}
+{{/*						<a href="{{ .Permalink }}">{{ .Title }}</a>*/}}
+{{/*              {{ with partial "functions/repositories_implementing_strategy__pages.html" $toolOrStrategyID }}*/}}
+{{/*								See also: {{ partial "repositories_implementing_strategy_delimited_list.html" (dict "toolOrStrategyID" $toolOrStrategyID "withLinks" true) }}*/}}
+{{/*              {{ end }}*/}}
+{{/*					</li>*/}}
+{{/*      {{ end }}*/}}
+{{/*	</ul>*/}}
 
+
+
+	<table class="table table-sm table-striped table-bordered">
+		<thead>
+		<tr class="column-header-row">
+			<th>Tool/Strategy</th>
+			<th>Description</th>
+			<th>Notes for Specific Repositories</th>
+		</tr>
+		</thead>
+		<tbody>
+		{{ range where .Data.Pages "Params.recommended" true }}
+        {{ $toolOrStrategyID := .File.ContentBaseName }}
+			<tr>
+				<td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+				<td>{{ .Description }}</td>
+				<td>
+					{{ with partial "functions/repositories_implementing_strategy__pages.html" $toolOrStrategyID }}
+							{{ partial "repositories_implementing_strategy_delimited_list.html" (dict "toolOrStrategyID" $toolOrStrategyID "withLinks" true) }}
+					{{ end }}
+				</td>
+			</tr>
+		{{ end }}
+	</table>
+
+
+
+<br/>
 	<h2>Tools and Strategies which are NOT recommended</h2>
 	<ul>
       {{ range where .Data.Pages "Params.recommended" false }}

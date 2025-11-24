@@ -15,9 +15,12 @@ caption {
 
 table, tr, th, td {
     color: $main-content-text-color;
-    //font-size: $table-content-font-size;
     font-family: $main-content-font;
-    border: 0.5px solid $border-colour;
+    //border: 0.5px solid $border-colour;
+}
+
+table {
+  border-collapse: collapse;
 }
 
 td,th {

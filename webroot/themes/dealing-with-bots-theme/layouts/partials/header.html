@@ -1,3 +1,11 @@
+{{ with site.Params.headerMessages }}
+    {{ range . }}
+			<div class="alert alert-{{ .type }}" role="alert" style="text-align: center;">
+				<h5>{{ .message | markdownify }}</h5>
+			</div>
+    {{ end }}
+{{ end }}
+
 {{ if .Draft }}
 	<div class="alert alert-danger" role="alert" style="text-align: center;">
 		<h3>This page has <b><code>draft: true</code></b> in its Hugo front-matter, so it will not be published.</h3>
