@@ -50,7 +50,7 @@ markup:
       definitionList: true
       footnote: true
       linkify: false
-      strikethrough: false
+      strikethrough: true
       table: true
       taskList: true
       typographer: false
@@ -62,7 +62,7 @@ markup:
         mark:
           enable: true
         subscript:
-          enable: true
+          enable: false
         superscript:
           enable: true
     parser:

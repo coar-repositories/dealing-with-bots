@@ -28,7 +28,7 @@
 						<br/>
 						<br/>
               {{ with $recommendedTools }}
-								<b>Recommended</b> tools include:
+								<b>Recommended</b> tools/strategies include:
 								<ul>
                     {{ range . }}
 											<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
@@ -37,7 +37,7 @@
               {{ end }}
 
               {{ with $notRecommendedTools }}
-								Tools which are <b>not</b> recommended include:
+								Tools/strategies which are <b>not</b> recommended include:
 								<ul>
                     {{ range . }}
 											<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>

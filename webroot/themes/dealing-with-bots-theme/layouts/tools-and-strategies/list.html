@@ -11,7 +11,7 @@
 	<h2>Tools and Strategies which are NOT recommended</h2>
 	<ul>
       {{ range where .Data.Pages "Params.recommended" false }}
-				<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+				<li><a href="{{ .Permalink }}">{{ .Title }}</a>&nbsp;&nbsp;<span class="badge text-bg-danger inline-badge">Not Recommended</span></li>
       {{ end }}
 	</ul>
 {{ end }}
