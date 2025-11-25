@@ -69,6 +69,7 @@ a.nav-link, a.nav-link:visited, a.nav-link:hover, a.dropdown-item {
 
 .link-decorator {
   font-size: 0.9em;
+  margin-left: 2px;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, {
@@ -132,10 +133,11 @@ blockquote {
   margin-left: 20px;
   padding: 10px 10px 1px;
   margin-right: 20px;
-  border-left: 1px solid #cdcdcd;
-  border-right: 1px solid #cdcdcd;
+  //border-left: none !important;
+  border-left: 4px solid #cdcdcd !important;
+  //border-right: 1px solid #cdcdcd;
   //border: 1px solid #cdcdcd;
-  background-color: $panel-background-colour;
+  //background-color: $panel-background-colour;
 }
 
 
@@ -223,4 +225,11 @@ div.specific-repository-systems-using-strategy-delimited-list {
   border: 1px solid #cdcdcd;
   background-color: #efefef;
   padding-left: 10px;
+}
+
+div.repository-metadata {
+  padding-left: 10px;
+  font-size: 0.8em;
+  border: 0.5px solid #cdcdcd;
+  background-color: #efefef;
 }

@@ -1,21 +1,25 @@
 {{ define "main" }}
-	<h1>{{ .Title }}</h1>
-  {{ .Content }}
-	<h2>Recommended Tools and Strategies</h2>
-		<ul>
-        {{ range where .Data.Pages "Params.recommended" true }}
-  				<li>
-						<a href="{{ .Permalink }}">{{ .Title }}</a><br/>
-<!-- 						{{ .Description }} -->
-						</li>
+    {{ $repositoryResources := .RegularPages }}
+		<div class="text-end">
+        {{ if .Params.recommended }}
+					<span class="badge text-bg-success header-badge">Recommended</span>
+        {{ else }}
+					<span class="badge text-bg-danger header-badge">Not Recommended</span>
         {{ end }}
-  	</ul>
+		</div>
 
-<br/>
-	<h2>Tools and Strategies which are NOT recommended</h2>
-	<ul>
-      {{ range where .Data.Pages "Params.recommended" false }}
-				<li><a href="{{ .Permalink }}">{{ .Title }}</a>&nbsp;&nbsp;<span class="badge text-bg-danger inline-badge">Not Recommended</span></li>
+		<h1>{{ .Title }}</h1>
+    {{ with $repositoryResources }}
+			<p>(<a href="#repository-speciic-notes">See below for notes about specific repository systems</a>)</p>
+    {{ end }}
+
+    {{ .Content }}
+    {{ with $repositoryResources }}
+			<h2 id="repository-speciic-notes">Repository-Specific Notes</h2>
+      {{ range . }}
+				<h3>{{ .Title }}</h3>
+        {{ .Content }}
       {{ end }}
-	</ul>
+
+    {{ end }}
 {{ end }}
