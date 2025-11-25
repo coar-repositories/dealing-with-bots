@@ -1,0 +1,15 @@
+eprints:
+  homepage: "https://wiki.eprints.org/w/Main_Page"
+  current_stable_version: "3.4"
+  support: "https://wiki.eprints.org/w/Contact"
+  upgrading: "https://wiki.eprints.org/w/Upgrading"
+dspace:
+  homepage: ""
+  current_stable_version: ""
+  support: ""
+  upgrading: ""
+TEMPLATE:
+  homepage: ""
+  current_stable_version: ""
+  support: ""
+  upgrading: ""
