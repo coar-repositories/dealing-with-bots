@@ -4,8 +4,7 @@ date: 2024-12-16
 draft: false
 description: |
   Write and publish some Terms of Service and ensure that licensing is clearly articulated.
-include_in_quick_summary: true
-recommendation: yes
+recommendation: "yes"
 weight: 700
 ---
 

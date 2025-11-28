@@ -4,8 +4,7 @@ date: 2024-12-16
 draft: false
 description: |
   Upgrade your repository system if necessary, and consider increasing the hardware resources available to it.
-include_in_quick_summary: true
-recommendation: yes
+recommendation: "yes"
 weight: 100
 ---
 

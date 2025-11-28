@@ -4,8 +4,7 @@ date: 2024-12-16
 draft: false
 description: |
   Configure rate-limiting software to intercede when traffic from bots exceeds a certain threshold.
-include_in_quick_summary: true
-recommendation: yes
+recommendation: "yes"
 weight: 600
 ---
 

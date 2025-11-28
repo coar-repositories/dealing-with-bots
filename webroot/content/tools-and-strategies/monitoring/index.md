@@ -4,8 +4,7 @@ date: 2024-12-16
 draft: false
 description: |
   Actively monitor the network traffic to your repository
-include_in_quick_summary: true
-recommendation: yes
+recommendation: "yes"
 weight: 200
 ---
 
