@@ -17,4 +17,3 @@ Different approaches to rate-limiting include (but are not limited to):
 2. **Sliding Window Counter:** This logs the timestamps of each request and allows a certain number of requests within a defined duration of time.
 3. **Token Bucket:** This allocates "tokens" to a "bucket" at a regular rate and requests consume these tokens. If the bucket runs out of tokens, new requests are denied until the bucket has more tokens to allocate.
 
-https://httpd.apache.org/docs/current/mod/mod_ratelimit.html

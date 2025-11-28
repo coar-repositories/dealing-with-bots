@@ -1,4 +1,72 @@
 {{ define "main" }}
-	<h1>{{ .Title }}</h1>
-  {{ .Content }}
+    {{ $repositoryResources := .Resources.Match "repositories/*.md" }}
+    {{ $toolResources := .Resources.Match "tools/*.md" }}
+    {{ $someResourcesToList := false}}
+    {{ if or (gt (len $repositoryResources) 0) (gt (len $toolResources) 0) }}
+        {{ $someResourcesToList = true}}
+    {{ end }}
+		<div class="text-end">
+        {{ if .Params.recommended }}
+					<span class="badge text-bg-success header-badge">Recommended</span>
+        {{ else }}
+					<span class="badge text-bg-danger header-badge">Not Recommended</span>
+        {{ end }}
+		</div>
+
+		<h1>{{ .Title }}</h1>
+    {{ if $someResourcesToList }}
+				<div class="tools-and-strategies-sidebar">
+            {{ with $repositoryResources }}
+							<h4>Repositories</h4>
+							<ul>
+                  {{ range . }}
+										<li><a href="#{{ .File.BaseFileName }}">{{ .Title }}</a></li>
+                  {{ end }}
+							</ul>
+            {{ end }}
+            {{ with $toolResources }}
+							<h4>Specific Tools</h4>
+							<ul>
+                  {{ range . }}
+										<li><a href="#{{ .File.BaseFileName }}">{{ .Title }}</a></li>
+                  {{ end }}
+							</ul>
+            {{ end }}
+				</div>
+    {{ end }}
+
+    {{ .Content }}
+
+    {{ with $toolResources }}
+			<h2 id="tool-specific-notes">Specific Tools</h2>
+      {{ $array := slice}}
+      {{ range . }}
+          {{ $array = $array | append (print "<a href='#" .File.BaseFileName "'>" (.Title) "</a>")}}
+      {{ end }}
+			Jump down to:
+      {{ delimit $array ", " | markdownify }}
+			<br/>
+			<br/>
+      {{ range . }}
+				<h3 id="{{ .File.BaseFileName }}">{{ .Title }}</h3>
+        {{ .Content }}
+      {{ end }}
+    {{ end }}
+
+
+    {{ with $repositoryResources }}
+			<h2 id="repository-specific-notes">Repository-Specific Notes</h2>
+      {{ $array := slice}}
+      {{ range . }}
+          {{ $array = $array | append (print "<a href='#" .File.BaseFileName "'>" (.Title) "</a>")}}
+      {{ end }}
+			Jump down to:
+      {{ delimit $array ", " | markdownify }}
+			<br/>
+			<br/>
+      {{ range . }}
+				<h3 id="{{ .File.BaseFileName }}">{{ .Title }}</h3>
+        {{ .Content }}
+      {{ end }}
+    {{ end }}
 {{ end }}

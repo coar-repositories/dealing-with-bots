@@ -18,6 +18,11 @@ body, p, ol, ul, td {
   font-size: $main-content-font-size;
 }
 
+p {
+  padding: 0;
+  margin-bottom: 5px;
+}
+
 pre {
   padding: 15px;
   background-color: #F7F7F7;
@@ -234,4 +239,17 @@ div.repository-metadata {
   border: 0.5px solid #cdcdcd;
   background-color: #efefef;
   margin-bottom: 10px;
+}
+
+div.tools-and-strategies-sidebar {
+  border: 0.5px solid #cdcdcd;
+  background-color: #efefef;
+  padding: 10px;
+  float: right;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+div.tools-and-strategies-sidebar, div.tools-and-strategies-sidebar ul {
+    //font-size: 0.9em;
 }
