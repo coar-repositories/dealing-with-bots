@@ -1,5 +1,5 @@
 ---
-title: "Process: Quick Summary"
+title: "Quick Summary: Recommended Steps"
 date: 2024-12-16
 draft: false
 menu:

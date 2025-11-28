@@ -3,7 +3,7 @@ title: Implement a Network Firewall
 date: 2024-12-16
 draft: false
 recommended: true
-weight: 111
+weight: 400
 ---
 
 #### Filtering by Network Origin (IP Address)

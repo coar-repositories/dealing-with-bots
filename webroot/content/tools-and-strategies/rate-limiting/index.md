@@ -3,6 +3,7 @@ title: Implement Rate Limiting
 date: 2024-12-16
 draft: false
 recommended: true
+weight: 600
 ---
 
 Traffic rate limiting is a strategy which restricts the number of requests a client can make to a server within a specific time period. When applied to HTTP traffic, when a limit is exceeded, the server may respond with a "429 Too Many Requests" HTTP status code, effectively blocking further requests (perhaps temporarily).
