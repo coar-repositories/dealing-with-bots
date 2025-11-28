@@ -2,7 +2,10 @@
 title: Implement CAPTCHA
 date: 2024-12-16
 draft: false
-recommended: false
+description: |
+  Commonly used by websites, but **not** recommended for Open-access Repositories
+include_in_quick_summary: false
+recommendation: no
 weight: 900
 ---
 

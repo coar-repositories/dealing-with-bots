@@ -2,7 +2,10 @@
 title: Implement Rate Limiting
 date: 2024-12-16
 draft: false
-recommended: true
+description: |
+  Configure rate-limiting software to intercede when traffic from bots exceeds a certain threshold.
+include_in_quick_summary: true
+recommendation: yes
 weight: 600
 ---
 

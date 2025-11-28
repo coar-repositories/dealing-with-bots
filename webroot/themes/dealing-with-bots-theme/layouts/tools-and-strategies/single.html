@@ -6,11 +6,7 @@
         {{ $someResourcesToList = true}}
     {{ end }}
 		<div class="text-end">
-        {{ if .Params.recommended }}
-					<span class="badge text-bg-success header-badge">Recommended</span>
-        {{ else }}
-					<span class="badge text-bg-danger header-badge">Not Recommended</span>
-        {{ end }}
+				<h3>{{ partial "badge_recommendation" .Params.recommendation }}</h3>
 		</div>
 
 		<h1>{{ .Title }}</h1>

@@ -1,21 +1,49 @@
 {{ define "main" }}
 	<h1>{{ .Title }}</h1>
   {{ .Content }}
-	<h2>Recommended Tools and Strategies</h2>
-	<ul>
-      {{ range where .Data.Pages "Params.recommended" true }}
-				<li>
-					<a href="{{ .Permalink }}">{{ .Title }}</a><br/>
-					<!-- 						{{ .Description }} -->
-				</li>
-      {{ end }}
-	</ul>
 
-	<br/>
-	<h2>Tools and Strategies which are NOT recommended</h2>
-	<ul>
-      {{ range where .Data.Pages "Params.recommended" false }}
-				<li><a href="{{ .Permalink }}">{{ .Title }}</a>&nbsp;&nbsp;<span class="badge text-bg-danger inline-badge">Not Recommended</span></li>
-      {{ end }}
-	</ul>
+		<table class="table table-striped table-sm table-bordered">
+			<thead>
+			<tr>
+				<th>Tool/Strategy</th>
+				<th>Description</th>
+				<th>Recommendation</th>
+			</tr>
+			</thead>
+			<tbody>
+	{{ range .Data.Pages }}
+		<tr>
+			<td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+			<td>{{ .Description | markdownify }}</td>
+			<td>
+				{{ partial "badge_recommendation" .Params.recommendation }}
+			</td>
+		</tr>
+		{{ end }}
+
+			</tbody>
+		</table>
+
+
+
+{{/*	<h2>Recommended Tools and Strategies</h2>*/}}
+{{/*	<ul>*/}}
+{{/*      {{ range where .Data.Pages "Params.recommended" true }}*/}}
+{{/*				<li>*/}}
+{{/*					<a href="{{ .Permalink }}">{{ .Title }}</a><br/>*/}}
+{{/*					{{ .Description | markdownify }}*/}}
+{{/*				</li>*/}}
+{{/*      {{ end }}*/}}
+{{/*	</ul>*/}}
+
+{{/*	<br/>*/}}
+{{/*	<h2>Tools and Strategies which are NOT recommended</h2>*/}}
+{{/*	<ul>*/}}
+{{/*      {{ range where .Data.Pages "Params.recommended" false }}*/}}
+{{/*				<li>*/}}
+{{/*					<a href="{{ .Permalink }}">{{ .Title }}</a>&nbsp;&nbsp;<span class="badge text-bg-danger inline-badge">Not Recommended</span><br/>*/}}
+{{/*						{{ .Description | markdownify }}*/}}
+{{/*				</li>*/}}
+{{/*      {{ end }}*/}}
+{{/*	</ul>*/}}
 {{ end }}

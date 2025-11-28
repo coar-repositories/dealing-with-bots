@@ -13,10 +13,10 @@ the [Process for Managing Bots](/process/).
 
 ## Preparation
 
-1. Configure and deploy a [robots.txt](/tools-and-strategies/robots-txt/) file for your repository system
-2. [Upgrade your repository](/tools-and-strategies/upgrade-repository/) system if necessary, and consider increasing the hardware resources available to it.
+1. [Upgrade your repository](/tools-and-strategies/upgrade-repository/) system if necessary, and consider increasing the hardware resources available to it.
+2. Configure and deploy a [robots.txt](/tools-and-strategies/robots-txt/) file for your repository system
 3. Write and publish some [Terms of Service](/tools-and-strategies/tos/) and ensure that licensing is clearly articulated.
-4. Configure a [network firewall](/tools-and-strategies/network-firewall/) to block network addresses of known bad bots
+4. Configure a firewall for the local network within which your repository system is hosted, to block IP addresses of known bad bots.
 5. Configure a [Web Application Firewall (WAF)](/tools-and-strategies/waf/) to block known bad bots by identifying them from their user-agent strings (or other characteristics)
 
 ## Protection

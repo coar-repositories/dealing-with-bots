@@ -2,7 +2,10 @@
 title: Implement a Network Firewall
 date: 2024-12-16
 draft: false
-recommended: true
+description: |
+  Configure a firewall for the local network within which your repository system is hosted, to block IP addresses of known bad bots.
+include_in_quick_summary: true
+recommendation: yes
 weight: 400
 ---
 

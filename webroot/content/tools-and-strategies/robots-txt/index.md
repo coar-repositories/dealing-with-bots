@@ -2,7 +2,10 @@
 title: Configure a Robots.txt File
 date: 2024-12-16
 draft: false
-recommended: true
+description: |
+  Configure and deploy a `robots.txt` file for your repository system.
+include_in_quick_summary: true
+recommendation: yes
 weight: 300
 ---
 
@@ -12,7 +15,13 @@ The robots.txt file is a potentially very effective way to *declare* to bots the
 
 One COAR Survey respondent described how, in 2019, they had suffered a service outage due to traffic from Google's official web crawler. They were able to prevent this from recurring by carefully configuring their robots.txt file, and their expectation is that they will be able to do the same for the latest generation of what they call "AI bots". However, as we have seen, the growing proportion of "bad bots" implies that robots.txt files may increasingly be ignored.
 
-##### Potential to adversely affect welcome or well-behaved visitors
+### Adding human-readable terms
+It is also a good idea to add "human-readable" terms to the robots.txt file as "commented" text. Here are some examples:
+
+- [https://www.standaard.be/robots.txt](https://www.standaard.be/robots.txt)
+- [https://www.nrc.nl/robots.txt](https://www.nrc.nl/robots.txt)
+
+### Potential to adversely affect welcome or well-behaved visitors
 
 The Robots Exclusion Protocol, if implemented correctly, is able to be selective and precise in the bots which it declares to be welcome or unwelcome. However, legitimate services which honour the directives in robots.txt files which they encounter when visiting repositories report that these files are frequently badly configured. There is some anecdotal evidence of legitimate, well-behaved bots being turned away by over-zealously configured robots.txt files.
 

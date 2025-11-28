@@ -2,7 +2,10 @@
 title: Publish Terms of Service
 date: 2024-12-16
 draft: false
-recommended: true
+description: |
+  Write and publish some Terms of Service and ensure that licensing is clearly articulated.
+include_in_quick_summary: true
+recommendation: yes
 weight: 700
 ---
 
@@ -10,3 +13,8 @@ A Terms-of-service document is not likely to be machine-readable, and so not dir
 
 Such terms of service should clearly articulate any licensing which is applied to the use of repository resources.
 
+### Adding human-readable terms
+It is also a good idea to add "human-readable" terms to the [robots.txt](/tools-and-strategies/robots-txt/) file as "commented" text. Here are some examples:
+
+- [https://www.standaard.be/robots.txt](https://www.standaard.be/robots.txt)
+- [https://www.nrc.nl/robots.txt](https://www.nrc.nl/robots.txt)
