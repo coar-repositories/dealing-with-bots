@@ -9,15 +9,20 @@
 		</div>
 
 		<h1>{{ .Title }}</h1>
-    {{ with $repositoryResources }}
-{{/*			<p>(<a href="#repository-specific-notes">See below for notes about specific repository systems</a>)</p>*/}}
-    {{ end }}
 
     {{ .Content }}
     {{ with $repositoryResources }}
 			<h2 id="repository-specific-notes">Repository-Specific Notes</h2>
+      {{ $array := slice}}
       {{ range . }}
-				<h3>{{ .Title }}</h3>
+          {{ $array = $array | append (print "<a href='#" .File.BaseFileName "'>" (.Title) "</a>")}}
+      {{ end }}
+					Jump down to:
+      {{ delimit $array ", " | markdownify }}
+					<br/>
+					<br/>
+      {{ range . }}
+				<h3 id="{{ .File.BaseFileName }}">{{ .Title }}</h3>
         {{ .Content }}
       {{ end }}
 

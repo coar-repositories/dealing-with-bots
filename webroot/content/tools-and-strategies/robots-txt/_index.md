@@ -1,5 +1,5 @@
 ---
-title: Configure Robots.txt
+title: Configure a Robots.txt File
 date: 2024-12-16
 draft: false
 recommended: true

@@ -1,5 +1,5 @@
 ---
-title: Implement Network Firewall
+title: Implement a Network Firewall
 date: 2024-12-16
 draft: false
 recommended: true
@@ -8,7 +8,7 @@ weight: 111
 
 #### Filtering by Network Origin (IP Address)
 
-The most common measure reported by the community which repositories have employed to mitigate the effect of badly-behaved bots is to use network or server [firewalls](https://en.wikipedia.org/w/index.php?title=Firewall_(computing)) to block access from bots according to their origin IP address.
+The most common measure reported by the community which repositories have employed to mitigate the effect of badly-behaved bots is to use network or server firewalls to block access from bots according to their origin IP address.
 
 These kinds of firewalls are ubiquitous in networks and servers and are effective in blocking remote systems so long as the origin IP address is known and stable. However, unscrupulous actors deploying bots at scale are able to utilise large numbers of IP addresses to launch "swarms" of bots, where it becomes very difficult to track and block particular IP addresses.
 
