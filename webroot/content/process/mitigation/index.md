@@ -10,6 +10,7 @@ tools:
   - "network-firewall"
   - "waf"
   - "rate-limiting"
+  - "cdn"
 ---
 
 If a bot is well-behaved then it should be allowed to access the resources it is requesting.

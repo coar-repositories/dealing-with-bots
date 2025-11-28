@@ -25,7 +25,7 @@
 							</ul>
             {{ end }}
             {{ with $toolResources }}
-							<h4>Specific Tools</h4>
+							<h4>Tools</h4>
 							<ul>
                   {{ range . }}
 										<li><a href="#{{ .File.BaseFileName }}">{{ .Title }}</a></li>
@@ -39,11 +39,11 @@
 
     {{ with $toolResources }}
 			<h2 id="tool-specific-notes">Specific Tools</h2>
-      {{ $array := slice}}
-      {{ range . }}
-          {{ $array = $array | append (print "<a href='#" .File.BaseFileName "'>" (.Title) "</a>")}}
-      {{ end }}
-      <p>Jump down to:{{ delimit $array ", " | markdownify }}</p>
+{{/*      {{ $array := slice}}*/}}
+{{/*      {{ range . }}*/}}
+{{/*          {{ $array = $array | append (print "<a href='#" .File.BaseFileName "'>" (.Title) "</a>")}}*/}}
+{{/*      {{ end }}*/}}
+{{/*      <p>Jump down to:{{ delimit $array ", " | markdownify }}</p>*/}}
       {{ range . }}
 				<h3 id="{{ .File.BaseFileName }}">{{ .Title }}</h3>
         {{ .Content }}
@@ -52,12 +52,12 @@
 
 
     {{ with $repositoryResources }}
-			<h2 id="repository-specific-notes">Repository-Specific Notes</h2>
-      {{ $array := slice}}
-      {{ range . }}
-          {{ $array = $array | append (print "<a href='#" .File.BaseFileName "'>" (.Title) "</a>")}}
-      {{ end }}
-			<p>Jump down to: {{ delimit $array ", " | markdownify }}</p>
+			<h2 id="repository-specific-notes">Specific Repositories</h2>
+{{/*      {{ $array := slice}}*/}}
+{{/*      {{ range . }}*/}}
+{{/*          {{ $array = $array | append (print "<a href='#" .File.BaseFileName "'>" (.Title) "</a>")}}*/}}
+{{/*      {{ end }}*/}}
+{{/*			<p>Jump down to: {{ delimit $array ", " | markdownify }}</p>*/}}
       {{ range . }}
 				<h3 id="{{ .File.BaseFileName }}">{{ .Title }}</h3>
         {{ .Content }}

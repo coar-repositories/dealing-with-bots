@@ -11,6 +11,7 @@ tools:
   - "waf"
   - "monitoring"
   - "captcha"
+  - "cdn"
 ---
 
 The *protection* phase is for actions carried out in response to particular requests, or patterns of requests. This involves monitoring traffic (e.g. through inspection of web logs).
