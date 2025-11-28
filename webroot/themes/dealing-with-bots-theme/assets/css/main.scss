@@ -228,8 +228,10 @@ div.specific-repository-systems-using-strategy-delimited-list {
 }
 
 div.repository-metadata {
-  padding-left: 10px;
+  display: inline-block;
+  padding: 0 5px 0 5px;
   font-size: 0.8em;
   border: 0.5px solid #cdcdcd;
   background-color: #efefef;
+  margin-bottom: 10px;
 }

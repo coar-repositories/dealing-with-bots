@@ -1,13 +1,23 @@
 eprints:
   homepage: "https://wiki.eprints.org/w/Main_Page"
-  current_stable_version: "3.4"
+  current_stable_version: "[3.4](https://files.eprints.org)"
   support: "https://wiki.eprints.org/w/Contact"
   upgrading: "https://wiki.eprints.org/w/Upgrading"
 dspace:
-  homepage: ""
-  current_stable_version: ""
-  support: ""
-  upgrading: ""
+  homepage: "https://dspace.org"
+  current_stable_version: "[9.1](https://dspace.org/download/)"
+  support: "https://dspace.org/get-support/"
+  upgrading: "https://wiki.lyrasis.org/display/DSDOC9x/Upgrading+DSpace"
+hyrax:
+  homepage: "https://samvera.org/"
+  current_stable_version: "[5.2](https://github.com/samvera/hyrax)"
+  support: "https://samvera.org/get-started/getting-started"
+  upgrading: "https://github.com/samvera/hyrax/blob/main/documentation/developing-your-hyrax-based-app.md"
+invenio:
+  homepage: "https://inveniosoftware.org/products/rdm/"
+  current_stable_version: "[13.0](https://inveniordm.docs.cern.ch/releases/v13/version-v13.0.0/)"
+  support: "https://inveniordm.docs.cern.ch"
+  upgrading: "https://inveniordm.docs.cern.ch/releases/v13/upgrade-v13.0/"
 TEMPLATE:
   homepage: ""
   current_stable_version: ""

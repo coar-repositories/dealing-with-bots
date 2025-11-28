@@ -1,25 +1,16 @@
 {{- with index site.Data.repositories (.Get 0) }}
 	<div class="repository-metadata">
 		{{ with .current_stable_version }}
-			Current stable version: {{ . }}
-			&nbsp;&nbsp;|&nbsp;&nbsp;
+			Current stable version: {{ . | markdownify}}
 		{{ end }}
 		{{ with .homepage }}
+			&nbsp;|&nbsp;&nbsp;
 			<a href="{{ . }}">Homepage</a>
-			&nbsp;&nbsp;|&nbsp;&nbsp;
 		{{ end }}
 		{{ with .support }}
+			&nbsp;|&nbsp;&nbsp;
 			<a href="{{ . }}">Support</a>
-			&nbsp;&nbsp;|&nbsp;&nbsp;
 		{{ end }}
 	</div>
-{{/*	<div class="row">*/}}
-{{/*		<div class="col">*/}}
-{{/*			Current stable version: {{ .current_stable_version }}*/}}
-{{/*		</div>*/}}
-{{/*		<div class="col">*/}}
-{{/*			<a href="{{ .homepage }}">Homepage</a>*/}}
-{{/*		</div>*/}}
-{{/*	</div>*/}}
 {{- end -}}
 
