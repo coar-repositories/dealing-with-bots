@@ -43,10 +43,7 @@
       {{ range . }}
           {{ $array = $array | append (print "<a href='#" .File.BaseFileName "'>" (.Title) "</a>")}}
       {{ end }}
-			Jump down to:
-      {{ delimit $array ", " | markdownify }}
-			<br/>
-			<br/>
+      <p>Jump down to:{{ delimit $array ", " | markdownify }}</p>
       {{ range . }}
 				<h3 id="{{ .File.BaseFileName }}">{{ .Title }}</h3>
         {{ .Content }}
@@ -60,9 +57,7 @@
       {{ range . }}
           {{ $array = $array | append (print "<a href='#" .File.BaseFileName "'>" (.Title) "</a>")}}
       {{ end }}
-			Jump down to:
-      {{ delimit $array ", " | markdownify }}
-			<br/>
+			<p>Jump down to: {{ delimit $array ", " | markdownify }}</p>
       {{ range . }}
 				<h3 id="{{ .File.BaseFileName }}">{{ .Title }}</h3>
         {{ .Content }}

@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font;
   font-weight: $heading-font-weight-default;
   color: $heading-text-color;
-  margin-top: 20px;
+  //margin-top: 20px;
 }
 
 h1 {
@@ -233,13 +233,13 @@ div.specific-repository-systems-using-strategy-delimited-list {
   padding-left: 10px;
 }
 
-div.repository-metadata {
+.repository-metadata {
   display: inline-block;
   padding: 0 5px 0 5px;
   font-size: 0.8em;
   border: 0.5px solid #cdcdcd;
   background-color: #efefef;
-  //margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 div.tools-and-strategies-sidebar {
