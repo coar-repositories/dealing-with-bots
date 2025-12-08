@@ -3,7 +3,7 @@ title: Implement CAPTCHA
 date: 2024-12-16
 draft: false
 description: |
-  Commonly used by websites, but **not** recommended for Open-access Repositories
+  Commonly used by websites, but should bve used carefully in the context of Open-access Repositories
 recommendation: "maybe"
 weight: 900
 ---
