@@ -24,7 +24,7 @@ This involves the following steps:
 2. For bot traffic, evaluate the behaviour of the bot.
 3. Take further action as necessary.
 
-##### 1. For incoming traffic, distinguish between welcome and unwelcome visitors
+### 1. For incoming traffic, distinguish between welcome and unwelcome visitors
 
 This step in the process depends upon the repository's ability to identify visitors to the extent that they can be recognised as welcome or unwelcome. Various techniques for achieving this can be used.
 
@@ -34,7 +34,7 @@ A paper by four Belgian researchers from KU Leuven, _[Balancing Security and Pri
 
 Bearing this in mind - together with the findings from the previously mentioned Imperva report about the nature of bot behaviour in the "education sector" - the approach could - at this point - focus on dealing with less sophisticated bots and postpone dealing with bots that are hard to identify/handle (e.g. swarms of headless javascript-capable browsers) at a later stage. This approach has the advantage of keeping the technical requirements for repository managers under control.
 
-##### 2. For bot traffic, evaluate the behaviour of the bot
+### 2. For bot traffic, evaluate the behaviour of the bot
 
 At this stage, the visitor has been identified as a bot and, based on available information such as its origin network address and its self-declared software "agent", its welcomeness has been ascertained.
 

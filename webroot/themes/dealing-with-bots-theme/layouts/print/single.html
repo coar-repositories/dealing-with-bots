@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{/*	<h1>{{ .Title }}</h1>*/}}
+  {{ .Content }}
+  {{ with site.GetPage "section" "context"}}
+		<h1>{{ .Title }}</h1>
+    {{ .Content }}
+  {{ end }}
+
+  {{ with site.GetPage "section" "problem-statement"}}
+		<h1>{{ .Title }}</h1>
+    {{ .Content }}
+  {{ end }}
+
+  {{ with site.GetPage "section" "model"}}
+		<h1>{{ .Title }}</h1>
+    {{ .Content }}
+  {{ end }}
+
+  {{ with site.GetPage "section" "process"}}
+		<h1>{{ .Title }}</h1>
+    {{ .Content }}
+    {{- range .RegularPages -}}
+			<h2>{{ .Title }}</h2>
+      {{ .Content }}
+    {{- end -}}
+  {{ end }}
+
+  {{ with site.GetPage "section" "tools-and-strategies"}}
+		<h1>{{ .Title }}</h1>
+    {{ .Content }}
+    {{- range .RegularPages -}}
+			<h2>{{ .Title }}</h2>
+      {{ .Description }}
+							<p><a href="{{ .Permalink }}">See website for more details</a></p>
+    {{- end -}}
+  {{ end }}
+{{ end }}

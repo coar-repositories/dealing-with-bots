@@ -2,13 +2,18 @@
 theme: "dealing-with-bots-theme"
 languageCode: "en-gb"
 uglyURLs: false
-title: "Dealing With Bots"
+title: "Dealing With Bots: A COAR Resource for Repository Managers"
 enableRobotsTXT: true
 enableGitInfo: false
 disablePathToLower: true
 services:
   rss:
     limit: 20
+outputFormats:
+  markdown:
+    mediaType: "text/markdown"
+    baseName: "index"
+    isPlainText: true
 outputs:
   home:
     - html

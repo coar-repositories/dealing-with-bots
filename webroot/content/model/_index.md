@@ -24,7 +24,7 @@ An interesting affordance of this model is that a bot can be *welcome*, but also
 
 This distinction between *welcomeness* and *behaviour* allows us to make clearer recommendations about how to deal with bots in general. For example, some actions which a repository service might wish to take are *pro-active* and concerned with welcomeness, while others are *re-active* and largely about responding, in real-time, to bad-behaviour.
 
-### Welcomeness
+## Welcomeness
 
 The welcomeness of a visitor to a repository is a matter of policy for that repository. Any practical steps that repositories might take to express welcomeness and, crucially, convey this to visitors are, therefore, necessarily *proactive*.
 
@@ -38,13 +38,13 @@ In this model, the welcomeness of visitors is established through various identi
 
 Welcomeness may be further refined to apply to specific resources, rather than to the whole repository system.
 
-### Behaviour
+## Behaviour
 
 The behaviour of a bot is assessed at the time that the bot interacts with the repository. Any practical steps that repositories might make to identify, assess and (optionally) mitigate the behaviour of bots are, therefore, necessarily *reactive*.
 
 We can broadly assess different behaviours of bots as either "good" or "bad".
 
-#### Good Behaviour
+### Good Behaviour
 
 The IETF's Network Working Group has a draft document, *[Crawler Best Practices](https://datatracker.ietf.org/doc/draft-illyes-aipref-cbcp-00)*, which describes "best practices for web crawlers", summarised thus:
 
@@ -59,7 +59,7 @@ This is a useful list of good behaviours and can be applied to the interactions 
 
 In general, bots which exhibit these behaviours ensure that they identify themselves and their source systems' network locations reliably, which provides the target system (repository) with the opportunity to deny access to them. In addition, they comply with directives from the target system about which resources may be accessed.
 
-#### Bad Behaviour
+### Bad Behaviour
 
 It follows, therefore, that bots which do not adhere to these good practices are exhibiting bad behaviour. Badly behaved bots might be placed in one of two categories, depending on whether or not the harm being done is *intentional* or not:
 
