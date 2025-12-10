@@ -9,7 +9,7 @@ weight: 600
 
 Traffic rate limiting is a strategy which restricts the number of requests a client can make to a server within a specific time period. When applied to HTTP traffic, when a limit is exceeded, the server may respond with a "429 Too Many Requests" HTTP status code, effectively blocking further requests (perhaps temporarily).
 
-Preferred rates of access can be indicated to clients in [robots.txt](/tools-and-strategies/robots-txt/).
+Preferred rates of access can be indicated to clients in [robots.txt](/strategies/robots-txt/).
 
 There are tools available which will enforce rate-limiting, either universally, or on a per-client basis. More sophisticated tools will impose rate limiting on clients which have crossed a configured threshold of requests-per-second.
 

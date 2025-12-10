@@ -1,0 +1,22 @@
+{{ define "main" }}
+	<h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+		<table class="table table-striped table-sm table-bordered">
+			<thead>
+			<tr>
+				<th>Strategy</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tbody>
+	{{ range .Data.Pages }}
+		<tr>
+			<td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+			<td>{{ .Description | markdownify }}</td>
+		</tr>
+		{{ end }}
+			</tbody>
+		</table>
+
+{{ end }}

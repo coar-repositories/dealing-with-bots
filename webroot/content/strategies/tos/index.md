@@ -12,7 +12,7 @@ A Terms-of-service document is not likely to be machine-readable, and so not dir
 Such terms of service should clearly articulate any licensing which is applied to the use of repository resources.
 
 ### Adding human-readable terms
-It is also a good idea to add "human-readable" terms to the [robots.txt](/tools-and-strategies/robots-txt/) file as "commented" text. Here are some examples:
+It is also a good idea to add "human-readable" terms to the [robots.txt](/strategies/robots-txt/) file as "commented" text. Here are some examples:
 
 - [https://www.standaard.be/robots.txt](https://www.standaard.be/robots.txt)
 - [https://www.nrc.nl/robots.txt](https://www.nrc.nl/robots.txt)
