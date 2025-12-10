@@ -1,5 +1,5 @@
 ---
-title: Publish Terms of Service
+title: Publishing Terms of Service
 date: 2024-12-16
 draft: false
 description: |

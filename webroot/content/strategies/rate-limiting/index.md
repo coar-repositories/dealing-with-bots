@@ -1,5 +1,5 @@
 ---
-title: "Implement Rate Limiting"
+title: "Throttling the Rate of Traffic"
 date: 2024-12-16
 draft: false
 description: |

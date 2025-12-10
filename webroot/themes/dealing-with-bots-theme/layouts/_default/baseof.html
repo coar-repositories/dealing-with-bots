@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        {{partial "head" .}}
-    </head>
-    <body data-pagefind-body>
-        <div id="container-fluid">
-            {{ partial "header" . }}
-            {{ block "main" . }}
+<html lang="en">
+{{partial "head" . }}
+<body data-pagefind-body>
+<div id="container-fluid">
+    {{ if site.Params.disableWebsite }}
+			<div class="alert alert-danger" role="alert" style="text-align: center;">
+				<h5>This website is in active development and is <b>not ready to be used as a reference</b>. Please check back later.</h5>
+			</div>
+    {{ else }}
+        {{ partial "header" . }}
+        {{ block "main" . }}
 
-            {{end}}
-            {{partial "footer" .}}
-            {{ if (eq .Site.Params.showDebugInfo true) }}
-                {{ partial "debugging" .}}
-            {{ end }}
-        </div>
-    </body>
+        {{end}}
+        {{partial "footer" . }}
+        {{ if (eq .Site.Params.showDebugInfo true) }}
+            {{ partial "debugging" . }}
+        {{ end }}
+    {{ end }}
+
+
+</div>
+</body>
 </html>
 
 			

@@ -3,3 +3,4 @@ buildDrafts: true
 params:
   showDebugInfo: false
   enableAnalytics: false
+  disableWebsite: false
