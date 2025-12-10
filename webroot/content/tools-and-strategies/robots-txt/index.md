@@ -4,7 +4,6 @@ date: 2024-12-16
 draft: false
 description: |
   Configure and deploy a `robots.txt` file for your repository system.
-recommendation: "yes"
 weight: 300
 ---
 

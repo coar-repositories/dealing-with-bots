@@ -25,7 +25,6 @@
                     {{ range .ByWeight }}
 											<li>
 												<a href="{{ .Permalink }}">{{ .Title }}</a>
-                          {{ partial "badge_recommendation" .Params.recommendation }}
 											</li>
                     {{ end }}
 								</ul>

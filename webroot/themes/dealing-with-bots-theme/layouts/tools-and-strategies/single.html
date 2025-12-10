@@ -5,9 +5,6 @@
     {{ if or (gt (len $repositoryResources) 0) (gt (len $toolResources) 0) }}
         {{ $someResourcesToList = true}}
     {{ end }}
-		<div class="text-end">
-				<h3>{{ partial "badge_recommendation" .Params.recommendation }}</h3>
-		</div>
 
 		<h1>{{ .Title }}</h1>
     {{ if $someResourcesToList }}

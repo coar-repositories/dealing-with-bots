@@ -7,7 +7,6 @@
 			<tr>
 				<th>Tool/Strategy</th>
 				<th>Description</th>
-				<th>Recommendation</th>
 			</tr>
 			</thead>
 			<tbody>
@@ -15,9 +14,6 @@
 		<tr>
 			<td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
 			<td>{{ .Description | markdownify }}</td>
-			<td>
-				{{ partial "badge_recommendation" .Params.recommendation }}
-			</td>
 		</tr>
 		{{ end }}
 

@@ -4,7 +4,6 @@ date: 2024-12-16
 draft: false
 description: |
   Configure a firewall for the local network within which your repository system is hosted, to block IP addresses of known bad bots.
-recommendation: "yes"
 weight: 400
 ---
 

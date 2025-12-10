@@ -4,7 +4,6 @@ date: 2024-12-16
 draft: false
 description: |
   Upgrade your repository system if necessary, and consider increasing the hardware resources available to it.
-recommendation: "yes"
 weight: 100
 ---
 
