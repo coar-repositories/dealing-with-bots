@@ -1,0 +1,12 @@
+{{ $strategies := slice}}
+{{ with .Params.strategies }}
+    {{ range . }}
+        {{ $strategy_page := site.GetPage (printf "strategies/%s/index.md" .) }}
+        {{ with $strategy_page }}
+            {{ if not $strategy_page.Draft }}
+                {{ $strategies = $strategies | append $strategy_page }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ return $strategies }}

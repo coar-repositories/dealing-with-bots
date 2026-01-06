@@ -1,4 +1,21 @@
 {{ define "main" }}
 	<h1>{{ .Title }}</h1>
-  {{ partial "process_phase" (dict "page" . "fullContent" true) }}
+			<div class="row">
+				<div class="col-md-9">
+            {{ .Content }}
+				</div>
+				<div class="col-md-3">
+            {{ $strategies := partial "strategies_for_process_phase.html" . }}
+            {{ with $strategies }}
+							<b>Available Strategies</b>
+							<ul>
+                  {{ range .ByWeight }}
+										<li>
+											<a href="{{ .Permalink }}">{{ .Title }}</a>
+										</li>
+                  {{ end }}
+							</ul>
+            {{ end }}
+				</div>
+			</div>
 {{ end }}

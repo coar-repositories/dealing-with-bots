@@ -4,23 +4,15 @@
 	<br/>
 	<div class="row">
       {{ range .Data.Pages }}
-          {{ $tools := slice}}
-          {{ with .Params.tools }}
-              {{ range . }}
-                  {{ $tool_page := site.GetPage (printf "tools-and-strategies/%s/index.md" .) }}
-                  {{ with $tool_page }}
-                      {{ $tools = $tools | append $tool_page }}
-                  {{ end }}
-              {{ end }}
-          {{ end }}
+					{{ $strategies := partial "strategies_for_process_phase.html" . }}
 					<div class="col">
 						<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
 						<p>
                 {{ .Description | markdownify }}
 							(<a href="{{ .Permalink }}">Read more</a>)
 						</p>
-              {{ with $tools }}
-								<b>Tools/strategies</b>
+              {{ with $strategies }}
+								<b>Available Strategies</b>
 								<ul>
                     {{ range .ByWeight }}
 											<li>

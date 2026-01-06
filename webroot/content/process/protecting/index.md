@@ -5,7 +5,7 @@ draft: false
 description: |
   The *protection* phase is for actions carried out in response to particular requests, or patterns of requests. This involves monitoring traffic (e.g. through inspection of web logs). A busy repository deals with a continuous flow of incoming HTTP GET requests for its resources. These requests need to be evaluated to determine if the visitor is welcome, and to decide whether or not its behaviour is acceptable. The repository then needs to react, by deciding what action to take. 
 weight: 20
-tools:
+strategies:
   - "robots-txt"
   - "network-firewall"
   - "waf"

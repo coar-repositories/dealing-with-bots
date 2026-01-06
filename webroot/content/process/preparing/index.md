@@ -5,7 +5,7 @@ draft: false
 description: |
   The _preparation_ phase is for actions which can be carried out in advance of any traffic, to prepare the repository for dealing with requests. In this phase the repository service determines the types of visitors it wishes to welcome or make unwelcome. It then declares this through the medium of a robots.txt file, Terms of Service, firewall configurations etc.
 weight: 10
-tools:
+strategies:
   - "robots-txt"
   - "tos"
   - "upgrade-repository"
