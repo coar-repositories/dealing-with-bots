@@ -48,7 +48,7 @@ The report found that most repositories were experiencing a significant increase
 
 The report goes into more detail about the nature and extent of service disruption - and outlines some of the mitigations being employed to try to protect repository services.
 
-It seems apparent that some, perhaps most of this relatively recent growth in "bad bots" is concerned with retrieving web resources at enormous scale, in service of the training and operation of so-called "generative AI" services. However, this website is not concerned with the _purpose_ of bad bots but is, instead, concerned with the _effect_ of them on the systems which they access.
+It seems apparent that some, perhaps most of this relatively recent growth in "bad bots" is concerned with retrieving web resources at enormous scale, in service of the training and operation of so-called "generative AI" services. However, this website is not concerned with the _purpose_ of badly-behaved bots but is, instead, concerned with the _effect_ of them on the systems which they access.
 
 The increase in the bad behaviour of bots is characterised by Eric Hellman in his blog post, _[AI bots are destroying Open Access](https://go-to-hellman.blogspot.com/2025/03/ai-bots-are-destroying-open-access.html)_:
 
