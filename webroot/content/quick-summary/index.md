@@ -17,13 +17,15 @@ the [Process for Managing Bots](/process/).
 2. Configure and deploy a [robots.txt](/strategies/robots-txt/) file for your repository system
 3. Write and publish some [Terms of Service](/strategies/tos/) and ensure that licensing is clearly articulated.
 4. Configure a firewall for the local network within which your repository system is hosted, to block IP addresses of known bad bots.
-5. Configure a [Web Application Firewall (WAF)](/strategies/waf/) to block known bad bots by identifying them from their user-agent strings (or other characteristics)
+
+[//]: # (5. Configure a [Web Application Firewall &#40;WAF&#41;]&#40;/strategies/waf/&#41; to block known bad bots by identifying them from their user-agent strings &#40;or other characteristics&#41;)
 
 ## Protection
 
-1. [Monitor the incoming traffic](/strategies/monitoring/) to your repository system.
+1. Monitor the incoming traffic to your repository system.
 2. Adjust your [network firewall](/strategies/network-firewall/) to block network locations of emerging threats from bad bots
-3. Adjust your [Web Application Firewall (WAF)](/strategies/waf/) to block user-agent strings (or other characteristics) of newly identified bad bots
+
+[//]: # (3. Adjust your [Web Application Firewall &#40;WAF&#41;]&#40;/strategies/waf/&#41; to block user-agent strings &#40;or other characteristics&#41; of newly identified bad bots)
 
 ## Mitigation
 
