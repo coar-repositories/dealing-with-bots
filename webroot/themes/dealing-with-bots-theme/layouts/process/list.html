@@ -2,27 +2,6 @@
 	<h1>{{ .Title }}</h1>
   {{ .Content }}
 	<br/>
-	<div class="row">
-      {{ range .Data.Pages }}
-					{{ $strategies := partial "strategies_for_process_phase.html" . }}
-					<div class="col">
-						<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-						<p>
-                {{ .Description | markdownify }}
-							(<a href="{{ .Permalink }}">Read more</a>)
-						</p>
-              {{ with $strategies }}
-								<b>Available Strategies</b>
-								<ul>
-                    {{ range .ByWeight }}
-											<li>
-												<a href="{{ .Permalink }}">{{ .Title }}</a>
-											</li>
-                    {{ end }}
-								</ul>
-              {{ end }}
-					</div>
-      {{ end }}
-	</div>
+  {{ partial "processes_for_index_page.html" . }}
 
 {{ end }}
