@@ -4,7 +4,7 @@ date: 2024-12-16
 draft: false
 menu:
   main:
-    name: Model
+    name: A Model for Characterising Bots
     weight: 40
     parent: Background
 ---
