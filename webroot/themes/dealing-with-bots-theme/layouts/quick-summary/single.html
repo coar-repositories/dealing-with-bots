@@ -1,0 +1,10 @@
+{{ define "main" }}
+	<h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  {{ partial "quick_summary_section_for_phase.html" (dict "phase" "preparing" "page" .) }}
+  {{ partial "quick_summary_section_for_phase.html" (dict "phase" "protecting" "page" .) }}
+  {{ partial "quick_summary_section_for_phase.html" (dict "phase" "mitigating" "page" .) }}
+
+
+{{ end }}

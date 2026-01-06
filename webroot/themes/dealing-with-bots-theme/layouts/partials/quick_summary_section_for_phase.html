@@ -1,0 +1,12 @@
+
+
+<h3>{{ title .phase }}</h3>
+{{ $processPhasePage := site.GetPage (printf "/process/%s/index.md" .phase) }}
+<ol>
+    {{ range index .page.Params.steps .phase }}
+        {{ $strategyPage := site.GetPage (printf "strategies/%s/index.md" .) }}
+        {{ if and $strategyPage (not $strategyPage.Draft) }}
+					<li>{{ index $processPhasePage.Params.strategies . | markdownify }} (<a href="{{ $strategyPage.Permalink }}">read more</a>)</li>
+        {{ end }}
+    {{ end }}
+</ol>

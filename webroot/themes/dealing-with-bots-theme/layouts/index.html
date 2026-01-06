@@ -1,8 +1,8 @@
 {{ define "main" }}
 	<h1>{{ .Title }}</h1>
   {{ .Content }}
-  {{ $process_page := site.GetPage (printf "process/_index.md") }}
-  {{ $process_page.Content}}
-	<br/>
-  {{ partial "processes_for_index_page.html" $process_page }}
+{{/*  {{ $process_page := site.GetPage (printf "process/_index.md") }}*/}}
+{{/*  {{ $process_page.Content}}*/}}
+{{/*	<br/>*/}}
+{{/*  {{ partial "processes_for_index_page.html" $process_page }}*/}}
 {{ end }}
