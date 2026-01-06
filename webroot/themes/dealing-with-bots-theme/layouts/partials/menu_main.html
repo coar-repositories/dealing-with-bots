@@ -1,0 +1,29 @@
+{{- range . }}
+    {{ if .HasChildren }}
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {{ .Name }}
+				</a>
+				<ul class="dropdown-menu">
+            {{ range .Children }}
+							<li><a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
+				</ul>
+			</li>
+    {{ else }}
+        {{ if and ( ne .Page nil ) (not .Page.Draft) }}
+            {{ if eq .Parent "" }}
+                {{- if page.IsMenuCurrent .Menu . }}
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="{{ .URL}} ">{{ .Name }}</a>
+									</li>
+                {{ else }}
+									<li class="nav-item">
+										<a class="nav-link" aria-current="page" href="{{ .URL}} ">{{ .Name }}</a>
+									</li>
+                {{ end}}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+

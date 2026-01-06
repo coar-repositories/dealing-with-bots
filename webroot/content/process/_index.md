@@ -1,7 +1,7 @@
 ---
 title: A Process for Managing Bots
 date: 2024-12-16
-draft: false
+draft: true
 menu:
   main:
     name: A Process for Managing Bots
