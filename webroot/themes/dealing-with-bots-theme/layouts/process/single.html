@@ -1,27 +1,12 @@
 {{ define "main" }}
 	<h1>{{ .Title }}</h1>
-			<div class="row">
-				<div class="col-md-9">
-            {{ .Content }}
-				</div>
-				<div class="col-md-3">
-            {{ $processPhasePage := .}}
-            {{ $strategies := $processPhasePage.Params.strategies }}
-            {{ with $strategies }}
-							<b>Available Strategies</b>
-							<ul class="strategies-in-context">
-                  {{ range $strategy := sort . "order"}}
-                      {{ $strategy_page := site.GetPage (printf "strategies/%s/index.md" $strategy.id ) }}
-											<li>
-												<a href="{{ $strategy_page.Permalink }}">{{ $strategy_page.Title }}</a>
-                          {{ if $strategy_page.Draft }}
-														<span class="badge rounded-pill text-bg-danger">Draft</span>
-                          {{ end}}
-												<p>{{ $strategy.description }}</p>
-											</li>
-                  {{ end }}
-							</ul>
-            {{ end }}
-				</div>
-			</div>
+	<div class="row">
+		<div class="col-md-9">
+        {{ .Content }}
+		</div>
+		<div class="col-md-3">
+			<b>Available Strategies</b>
+        {{ partial "strategies_for_process_phase.html" . }}
+		</div>
+	</div>
 {{ end }}
