@@ -9,9 +9,7 @@ menu:
     parent: Background
 ---
 
-The encouragement of repositories to support machine-access is increasingly challenged by the recent and explosive growth of badly-behaved bots.
-
-There are, therefore, two inter-related, problems:
+There are two, inter-related, problems:
 
 ## Problem 1 - Overwhelming traffic from badly-behaved bots
 Open Access repositories are reporting a rapid increase in traffic from badly-behaved bots that try to aggressively collect content, and, as a result, overwhelming them with an unreasonably high volume of network requests.There are already reports of repositories having been brought down by such activity.
