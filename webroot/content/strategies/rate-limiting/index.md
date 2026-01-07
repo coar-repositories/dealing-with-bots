@@ -1,5 +1,5 @@
 ---
-title: "Throttling the Rate of Traffic"
+title: Rate Limiting
 date: 2024-12-16
 draft: false
 description: |

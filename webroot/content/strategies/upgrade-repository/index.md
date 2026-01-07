@@ -1,5 +1,5 @@
 ---
-title: Upgrading Your Repository System
+title: System Upgrade
 date: 2024-12-16
 draft: false
 description: |

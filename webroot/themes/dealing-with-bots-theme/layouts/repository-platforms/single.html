@@ -1,0 +1,19 @@
+{{ define "main" }}
+	<h1>{{ .Title }}</h1>
+
+
+
+	<table class="invisible-layout-table">
+		<tr>
+			<td class="field-name">Homepage</td>
+			<td>{{ .Params.homepage | markdownify }}</td>
+		</tr>
+		<tr>
+			<td class="field-name">Current Version</td>
+			<td>{{ .Params.current_stable_version | markdownify }}</td>
+		</tr>
+	</table>
+			<br/>
+
+  {{ .Content }}
+{{ end }}

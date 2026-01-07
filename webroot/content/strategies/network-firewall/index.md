@@ -1,5 +1,5 @@
 ---
-title: Implementing a Network Firewall
+title: Network Firewall
 date: 2024-12-16
 draft: false
 description: |

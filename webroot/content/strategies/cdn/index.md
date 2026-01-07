@@ -1,5 +1,5 @@
 ---
-title: Using a Content Delivery Network (CDN)
+title: Content Delivery Network (CDN)
 date: 2024-12-16
 draft: true
 description: |

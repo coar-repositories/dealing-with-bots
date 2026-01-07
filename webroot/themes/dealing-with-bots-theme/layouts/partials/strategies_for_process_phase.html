@@ -8,7 +8,7 @@
             {{ if $strategy_page.Draft }}
 							<span class="badge rounded-pill text-bg-danger">Draft</span>
             {{ end}}
-					<p>{{ $strategy.description }}</p>
+					<p>{{ $strategy.description | markdownify }}</p>
 				</li>
     {{ end }}
 </ul>

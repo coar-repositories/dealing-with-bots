@@ -1,5 +1,5 @@
 ---
-title: "Using a \"Proof of Work\" Challenge"
+title: Proof of Work
 date: 2024-12-16
 draft: false
 description: |

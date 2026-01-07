@@ -1,6 +1,12 @@
 {{ define "main" }}
     {{ $repositoryResources := .Resources.Match "repositories/*.md" }}
-    {{ $toolResources := .Resources.Match "tools/*.md" }}
+    {{ $toolResources := slice}}
+    {{ range .Params.tools}}
+        {{ $toolPage := site.GetPage (printf "tools/%s.md" .) }}
+        {{ if $toolPage }}
+            {{ $toolResources = $toolResources | append $toolPage }}
+        {{ end }}
+    {{ end}}
     {{ $someResourcesToList := false}}
     {{ if or (gt (len $repositoryResources) 0) (gt (len $toolResources) 0) }}
         {{ $someResourcesToList = true}}
@@ -8,49 +14,38 @@
 
 		<h1>{{ .Title }}</h1>
     {{ if $someResourcesToList }}
-				<div class="tools-and-strategies-sidebar">
-            {{ with $repositoryResources }}
-							<h4>Repositories</h4>
-							<ul>
-                  {{ range . }}
-										<li><a href="#{{ .File.BaseFileName }}">{{ .Title }}</a></li>
-                  {{ end }}
-							</ul>
-            {{ end }}
-            {{ with $toolResources }}
-							<h4>Tools</h4>
-							<ul>
-                  {{ range . }}
-										<li><a href="#{{ .File.BaseFileName }}">{{ .Title }}</a></li>
-                  {{ end }}
-							</ul>
-            {{ end }}
-				</div>
+			<div class="tools-and-strategies-sidebar">
+          {{ with $repositoryResources }}
+						<h4>Repository Platforms</h4>
+						<ul>
+                {{ range . }}
+									<li><a href="#{{ .File.BaseFileName }}">{{ .Title }}</a></li>
+                {{ end }}
+						</ul>
+          {{ end }}
+          {{ with $toolResources }}
+						<h4>Specific Tools</h4>
+						<ul>
+                {{ range . }}
+									<li><a href="#{{ .File.BaseFileName }}">{{ .Title }}</a></li>
+                {{ end }}
+						</ul>
+          {{ end }}
+			</div>
     {{ end }}
 
     {{ .Content }}
 
     {{ with $toolResources }}
 			<h2 id="tool-specific-notes">Specific Tools</h2>
-{{/*      {{ $array := slice}}*/}}
-{{/*      {{ range . }}*/}}
-{{/*          {{ $array = $array | append (print "<a href='#" .File.BaseFileName "'>" (.Title) "</a>")}}*/}}
-{{/*      {{ end }}*/}}
-{{/*      <p>Jump down to:{{ delimit $array ", " | markdownify }}</p>*/}}
       {{ range . }}
 				<h3 id="{{ .File.BaseFileName }}">{{ .Title }}</h3>
         {{ .Content }}
       {{ end }}
     {{ end }}
 
-
     {{ with $repositoryResources }}
 			<h2 id="repository-specific-notes">Specific Repositories</h2>
-{{/*      {{ $array := slice}}*/}}
-{{/*      {{ range . }}*/}}
-{{/*          {{ $array = $array | append (print "<a href='#" .File.BaseFileName "'>" (.Title) "</a>")}}*/}}
-{{/*      {{ end }}*/}}
-{{/*			<p>Jump down to: {{ delimit $array ", " | markdownify }}</p>*/}}
       {{ range . }}
 				<h3 id="{{ .File.BaseFileName }}">{{ .Title }}</h3>
         {{ .Content }}

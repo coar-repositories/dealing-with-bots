@@ -6,31 +6,31 @@ description: |
   The *protection* phase is for actions carried out in response to particular requests, or patterns of requests. This involves monitoring traffic (e.g. through inspection of web logs). A busy repository deals with a continuous flow of incoming HTTP GET requests for its resources. These requests need to be evaluated to determine if the visitor is welcome, and to decide whether or not its behaviour is acceptable. The repository then needs to react, by deciding what action to take. 
 weight: 20
 strategies:
+  monitoring:
+    id: monitoring
+    order: 1
+    description: |
+      Monitor the incoming traffic to your repository system.
   robots-txt:
     id: robots-txt
-    order: 1
+    order: 2
     description: |
       Regularly review and revise the `robots.txt` file for your repository system
   network-firewall:
     id: network-firewall
-    order: 2
+    order: 3
     description: |
       Adjust your network firewall to block network locations of emerging threats from bad bots
   waf:
     id: waf
-    order: 3
+    order: 4
     description: |
       Adjust your Web Application Firewall (WAF) to block user-agent strings (or other characteristics) of newly identified bad bots
   proof-of-work:
     id: proof-of-work
-    order: 4
-    description: |
-      Implement a "proof-of-work" CAPTCHA or similar to require the visitor to perform a modest amount of computational work before being granted access
-  monitoring:
-    id: monitoring
     order: 5
     description: |
-      Monitor the incoming traffic to your repository system.
+      Implement a "proof-of-work" CAPTCHA or similar to require the visitor to perform a modest amount of computational work before being granted access
   cdn:
     id: cdn
     order: 6
