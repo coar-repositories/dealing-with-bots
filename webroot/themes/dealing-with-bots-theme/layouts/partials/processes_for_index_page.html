@@ -13,6 +13,9 @@
                   {{ range .ByWeight }}
 										<li>
 											<a href="{{ .Permalink }}">{{ .Title }}</a>
+                        {{ if .Draft }}
+													<span class="badge rounded-pill text-bg-danger">Draft</span>
+                        {{ end}}
 										</li>
                   {{ end }}
 							</ul>
