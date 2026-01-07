@@ -6,7 +6,7 @@
         {{ $strategyPage := site.GetPage (printf "strategies/%s/index.md" .) }}
         {{ with $strategyPage }}
 					<li>
-              {{ index $processPhasePage.Params.strategies $phase | markdownify }} (<a href="{{ $strategyPage.Permalink }}">read more</a>)
+              {{ (index $processPhasePage.Params.strategies $phase).description | markdownify }} (<a href="{{ $strategyPage.Permalink }}">read more</a>)
               {{ if $strategyPage.Draft }}
 								<span class="badge rounded-pill text-bg-danger">Draft</span>
               {{ end}}

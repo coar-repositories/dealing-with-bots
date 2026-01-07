@@ -5,14 +5,20 @@
             {{ .Content }}
 				</div>
 				<div class="col-md-3">
-            {{ $strategies := partial "strategies_for_process_phase.html" . }}
+            {{ $processPhasePage := .}}
+            {{ $strategies := $processPhasePage.Params.strategies }}
             {{ with $strategies }}
 							<b>Available Strategies</b>
-							<ul>
-                  {{ range .ByWeight }}
-										<li>
-											<a href="{{ .Permalink }}">{{ .Title }}</a>
-										</li>
+							<ul class="strategies-in-context">
+                  {{ range $strategy := sort . "order"}}
+                      {{ $strategy_page := site.GetPage (printf "strategies/%s/index.md" $strategy.id ) }}
+											<li>
+												<a href="{{ $strategy_page.Permalink }}">{{ $strategy_page.Title }}</a>
+                          {{ if $strategy_page.Draft }}
+														<span class="badge rounded-pill text-bg-danger">Draft</span>
+                          {{ end}}
+												<p>{{ $strategy.description }}</p>
+											</li>
                   {{ end }}
 							</ul>
             {{ end }}
