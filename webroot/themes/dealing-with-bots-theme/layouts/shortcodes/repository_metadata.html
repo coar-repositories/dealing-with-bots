@@ -1,16 +1,17 @@
-{{- with index site.Data.repositories (.Get 0) }}
+{{ $repositoryPage := site.GetPage (printf "repository-platforms/%s.md" (.Get 0)) }}
+{{ with $repositoryPage }}
 	<div class="repository-metadata">
-		{{ with .current_stable_version }}
-			Current stable version: {{ . | markdownify}}
-		{{ end }}
-		{{ with .homepage }}
-			&nbsp;|&nbsp;&nbsp;
-			<a href="{{ . }}">Homepage</a>
-		{{ end }}
-		{{ with .support }}
-			&nbsp;|&nbsp;&nbsp;
-			<a href="{{ . }}">Support</a>
-		{{ end }}
+      {{ with .Params.current_stable_version }}
+				Current stable version: {{ . | markdownify}}
+      {{ end }}
+      {{ with .Params.homepage }}
+				&nbsp;|&nbsp;&nbsp;
+				<a href="{{ . }}">Homepage</a>
+      {{ end }}
+      {{ with .Params.support }}
+				&nbsp;|&nbsp;&nbsp;
+				<a href="{{ . }}">Support</a>
+      {{ end }}
 	</div>
-{{- end -}}
+{{ end }}
 

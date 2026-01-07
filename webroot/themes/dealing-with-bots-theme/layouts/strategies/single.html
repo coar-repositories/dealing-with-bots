@@ -13,26 +13,26 @@
     {{ end }}
 
 		<h1>{{ .Title }}</h1>
-    {{ if $someResourcesToList }}
-			<div class="tools-and-strategies-sidebar">
-          {{ with $repositoryResources }}
-						<h4>Repository Platforms</h4>
-						<ul>
-                {{ range . }}
-									<li><a href="#{{ .File.BaseFileName }}">{{ .Title }}</a></li>
-                {{ end }}
-						</ul>
-          {{ end }}
-          {{ with $toolResources }}
-						<h4>Specific Tools</h4>
-						<ul>
-                {{ range . }}
-									<li><a href="#{{ .File.BaseFileName }}">{{ .Title }}</a></li>
-                {{ end }}
-						</ul>
-          {{ end }}
-			</div>
-    {{ end }}
+{{/*    {{ if $someResourcesToList }}*/}}
+{{/*			<div class="tools-and-strategies-sidebar">*/}}
+{{/*          {{ with $repositoryResources }}*/}}
+{{/*						<h4>Repository Platforms</h4>*/}}
+{{/*						<ul>*/}}
+{{/*                {{ range . }}*/}}
+{{/*									<li><a href="#{{ .File.BaseFileName }}">{{ .Title }}</a></li>*/}}
+{{/*                {{ end }}*/}}
+{{/*						</ul>*/}}
+{{/*          {{ end }}*/}}
+{{/*          {{ with $toolResources }}*/}}
+{{/*						<h4>Specific Tools</h4>*/}}
+{{/*						<ul>*/}}
+{{/*                {{ range . }}*/}}
+{{/*									<li><a href="#{{ .File.BaseFileName }}">{{ .Title }}</a></li>*/}}
+{{/*                {{ end }}*/}}
+{{/*						</ul>*/}}
+{{/*          {{ end }}*/}}
+{{/*			</div>*/}}
+{{/*    {{ end }}*/}}
 
     {{ .Content }}
 
