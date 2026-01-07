@@ -7,11 +7,11 @@ description: |
   If a bot is badly-behaved, then the repository (and/or any other components such as network firewalls, CDNs etc.) should take appropriate action. The model allows for badly-behaved (but previously welcome) bots to be declared as unwelcome - especially if the bad-behaviour is perceived to be persistent.
 weight: 30
 strategies:
-  upgrade-repository:
-    id: upgrade-repository
+  upgrade-infrastructure:
+    id: upgrade-infrastructure
     order: 1
     description: |
-      Consider increasing the hardware resources available to your repository.
+      Consider upgrading the infrastructure (e.g. server hardware, network resources etc.) supporting your repository platform to increase its resilience under load.
   rate-limiting:
     id: rate-limiting
     order: 2

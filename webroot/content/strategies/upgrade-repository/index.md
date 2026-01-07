@@ -1,9 +1,9 @@
 ---
-title: System Upgrade
+title: Repository System Upgrade
 date: 2024-12-16
 draft: false
 description: |
-  Upgrade your repository system if necessary, and consider increasing the hardware resources available to it.
+  Upgrade your repository system's software to the latest supported version to benefit from security patches, bug fixes, and performance improvements.
 weight: 100
 ---
 
