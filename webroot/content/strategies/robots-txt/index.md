@@ -5,6 +5,8 @@ draft: false
 description: |
   Configure and deploy a `robots.txt` file for your repository system.
 weight: 300
+tools:
+  - ai-robots-txt
 ---
 
 The [Robots Exclusion Protocol](https://doi.org/10.17487/RFC9309) is a web standard, implemented via a [robots.txt](https://www.robotstxt.org/ ) file, which instructs bots about which resources in the repository they may or may not access.
