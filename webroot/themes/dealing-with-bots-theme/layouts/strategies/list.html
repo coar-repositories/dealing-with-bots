@@ -11,12 +11,15 @@
 		</thead>
 		<tbody>
     {{ range .Data.Pages }}
-        {{ if not .Draft }}
-					<tr>
-						<td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
-						<td>{{ .Description | markdownify }}</td>
-					</tr>
-        {{ end }}
+			<tr>
+				<td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+				<td>
+						{{ .Description | markdownify }}
+            {{ if .Draft }}
+							<span class="badge rounded-pill text-bg-danger">Draft</span>
+            {{ end}}
+				</td>
+			</tr>
     {{ end }}
 		</tbody>
 	</table>

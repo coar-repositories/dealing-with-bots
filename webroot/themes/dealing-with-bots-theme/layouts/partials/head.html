@@ -11,15 +11,15 @@
     {{hugo.Generator}}
 
 	<title>{{ site.Title }}{{ if .Title }}: {{ .Title }}{{ end }}</title>
+    {{ $variablesStyle := resources.Get "css/_variables.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
+	<link rel="stylesheet" href="{{ $variablesStyle.Permalink }}">
 
     {{ $bootstrapStyle := resources.Get "css/bootstrap.min.css" | resources.Fingerprint }}
 	<link rel="stylesheet" href="{{ $bootstrapStyle.Permalink }}">
 
-    {{ $variablesStyle := resources.Get "css/_variables.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
-	<link rel="stylesheet" href="{{ $variablesStyle.Permalink }}">
 
     {{/*bootsrap-icons are not in the asset pipeline*/}}
-	<link rel="stylesheet" href="/css/bootstrap-icons.min.css">
+    {{/*	<link rel="stylesheet" href="/css/bootstrap-icons.min.css">*/}}
 
     {{ $datatablesBootstrapStyle := resources.Get "css/dataTables.bootstrap5.min.css" | resources.Fingerprint }}
 	<link rel="stylesheet" href="{{ $datatablesBootstrapStyle.Permalink }}">

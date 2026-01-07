@@ -4,9 +4,7 @@
         {{ . }}
         {{ $strategy_page := site.GetPage (printf "strategies/%s/index.md" $k) }}
         {{ with $strategy_page }}
-            {{ if not $strategy_page.Draft }}
-                {{ $strategies = $strategies | append $strategy_page }}
-            {{ end }}
+            {{ $strategies = $strategies | append $strategy_page }}
         {{ end }}
     {{ end }}
 {{ end }}

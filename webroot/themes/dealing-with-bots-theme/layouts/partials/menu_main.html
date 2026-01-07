@@ -11,19 +11,18 @@
 				</ul>
 			</li>
     {{ else }}
-        {{ if and ( ne .Page nil ) (not .Page.Draft) }}
-            {{ if eq .Parent "" }}
-                {{- if page.IsMenuCurrent .Menu . }}
-									<li class="nav-item">
-										<a class="nav-link active" aria-current="page" href="{{ .URL}} ">{{ .Name }}</a>
-									</li>
-                {{ else }}
-									<li class="nav-item">
-										<a class="nav-link" aria-current="page" href="{{ .URL}} ">{{ .Name }}</a>
-									</li>
-                {{ end}}
-            {{ end }}
-        {{ end }}
+        {{- if page.IsMenuCurrent .Menu . }}
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="{{ .URL}} ">{{ .Name }}</a>
+					</li>
+        {{ else }}
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="{{ .URL}} ">{{ .Name }}</a>
+					</li>
+        {{ end}}
     {{ end }}
 {{ end }}
 
+{{/*{{ if and ( ne .Page nil ) (not .Page.Draft) }}*/}}
+{{/*	<span class="badge rounded-pill text-bg-danger">Draft</span>*/}}
+{{/*{{ end }}*/}}
