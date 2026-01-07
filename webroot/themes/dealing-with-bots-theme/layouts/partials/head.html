@@ -27,6 +27,9 @@
     {{ $mainStyle := resources.Get "css/main.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
 	<link rel="stylesheet" href="{{ $mainStyle.Permalink }}">
 
+    {{ $formLayoutStyle := resources.Get "css/forms_and_layouts.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
+	<link rel="stylesheet" href="{{ $formLayoutStyle.Permalink }}">
+
     {{ $imageStyle := resources.Get "css/images.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
 	<link rel="stylesheet" href="{{ $imageStyle.Permalink }}">
 
@@ -39,8 +42,6 @@
     {{ $tablesStyle := resources.Get "css/tables.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
 	<link rel="stylesheet" href="{{ $tablesStyle.Permalink }}">
 
-    {{ $cardsStyle := resources.Get "css/cards.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
-	<link rel="stylesheet" href="{{ $cardsStyle.Permalink }}">
 
     {{ $mermaidStyle := resources.Get "css/mermaid.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
 	<link rel="stylesheet" href="{{ $mermaidStyle.Permalink }}">

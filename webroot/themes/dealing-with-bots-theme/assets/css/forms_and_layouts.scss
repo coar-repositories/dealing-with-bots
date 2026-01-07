@@ -1,0 +1,9 @@
+
+.field-name {
+  text-align: right;
+  font-weight: normal;
+}
+
+.field-name::after {
+  content: ": ";
+}

@@ -126,15 +126,6 @@ h4 {
   font-size: 1.1em
 }
 
-//h5 {
-//  font-size: 1.0em
-//}
-//
-//h6 {
-//  font-size: 1.0em
-//}
-
-
 blockquote {
   font-style: italic;
   margin-left: 20px;
@@ -171,28 +162,6 @@ mark {
   font-style: italic;
 }
 
-.field-name {
-  text-align: right;
-  font-weight: normal;
-}
-
-.field-name::after {
-  content: ": ";
-}
-
-.badge-header {
-  font-size: 1.2em;
-  text-align: right;
-}
-
-.badge a {
-  text-decoration: none;
-}
-
-.badge a:hover {
-  text-decoration: underline;
-}
-
 span.context-badge-menu {
   margin-left: 5px;
   font-size: 60%;
@@ -204,20 +173,6 @@ div.tools-callout {
   border: 1px solid #cdcdcd;
   padding: 10px;
   margin-bottom: 10px;
-}
-//
-//div.tools-callout, div.tools-callout ul {
-//  font-size: 90%;
-//}
-
-div.tldr {
-  //border: 2px solid #cdcdcd;
-  //background-color: lightyellow;
-  text-align: center;
-  font-style: italic;
-  //font-size: 150%;
-  padding: 10px;
-  margin-bottom: 30px;
 }
 
 span.header-badge {
@@ -250,10 +205,6 @@ div.tools-and-strategies-sidebar {
   float: right;
   margin-left: 10px;
   margin-top: 10px;
-}
-
-div.tools-and-strategies-sidebar, div.tools-and-strategies-sidebar ul {
-    //font-size: 0.9em;
 }
 
 ul.strategies-in-context p {

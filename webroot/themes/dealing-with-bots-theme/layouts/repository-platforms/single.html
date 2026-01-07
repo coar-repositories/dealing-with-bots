@@ -1,19 +1,34 @@
 {{ define "main" }}
 	<h1>{{ .Title }}</h1>
 
+	<div class="row">
+		<div class="col-sm-1 field-name">
+			Homepage
+		</div>
+		<div class="col-sm-11">
+        {{ .Params.homepage | markdownify }}
+		</div>
+		<div class="col-sm-1 field-name">
+			Current Version
+		</div>
+		<div class="col-sm-11">
+        {{ .Params.current_stable_version | markdownify }}
+		</div>
+		<div class="col-sm-1 field-name">
+			Support
+		</div>
+		<div class="col-sm-11">
+        {{ .Params.support | markdownify }}
+		</div>
+		<div class="col-sm-1 field-name">
+			Upgrading
+		</div>
+		<div class="col-sm-11">
+        {{ .Params.upgrading | markdownify }}
+		</div>
+	</div>
 
-
-	<table class="invisible-layout-table">
-		<tr>
-			<td class="field-name">Homepage</td>
-			<td>{{ .Params.homepage | markdownify }}</td>
-		</tr>
-		<tr>
-			<td class="field-name">Current Version</td>
-			<td>{{ .Params.current_stable_version | markdownify }}</td>
-		</tr>
-	</table>
-			<br/>
+	<br/>
 
   {{ .Content }}
 {{ end }}
