@@ -6,5 +6,6 @@ menu:
   main:
     name: Repository Platforms
     weight: 65
+    parent: Admin
 ---
 

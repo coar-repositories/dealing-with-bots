@@ -1,0 +1,13 @@
+{{ define "main" }}
+	<h1>{{ .Title }}</h1>
+  {{ .Content }}
+		{{ $strategiesUsingThisTool := where site.Pages "Params.tools" "intersect" (slice .File.BaseFileName) }}
+		{{ if gt (len $strategiesUsingThisTool) 0 }}
+			<h2>Strategies Using This Tool</h2>
+			<ul>
+			{{ range $strategiesUsingThisTool }}
+				<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+			{{ end }}
+			</ul>
+		{{ end }}
+{{ end }}

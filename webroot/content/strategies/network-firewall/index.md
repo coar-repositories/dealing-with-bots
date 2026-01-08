@@ -5,6 +5,10 @@ draft: false
 description: |
   Configure a firewall for the local network within which your repository system is hosted, to block IP addresses of known bad bots.
 weight: 400
+tools:
+  - firehol
+#  - iptables
+#  - ufw
 ---
 
 #### Filtering by Network Origin (IP Address)

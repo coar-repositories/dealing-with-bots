@@ -1,0 +1,35 @@
+{{ define "main" }}
+	<h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+	<table class="table table-striped table-sm table-bordered">
+		<thead>
+		<tr>
+			<th>Tool</th>
+			<th>Description</th>
+			<th>Strategies Using this Tool</th>
+		</tr>
+		</thead>
+		<tbody>
+    {{ range .Data.Pages }}
+			<tr>
+				<td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+				<td>
+            {{ .Description | markdownify }}
+				</td>
+				<td>
+            {{ $strategiesUsingThisTool := where site.Pages "Params.tools" "intersect" (slice .File.BaseFileName) }}
+            {{ if gt (len $strategiesUsingThisTool) 0 }}
+							<ul>
+                  {{ range $strategiesUsingThisTool }}
+										<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                  {{ end }}
+							</ul>
+            {{ end }}
+				</td>
+			</tr>
+    {{ end }}
+		</tbody>
+	</table>
+
+{{ end }}
