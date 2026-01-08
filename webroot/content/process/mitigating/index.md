@@ -16,11 +16,6 @@ strategies:
     order: 2
     description: |
       Configure rate-limiting software to intercede when traffic from bots exceeds a certain threshold.
-  cdn:
-    id: cdn
-    order: 3
-    description: |
-      Consider using emergency measures that may be provided by your Content Delivery Network (CDN)
 ---
 
 Some mitigation measures may be temporary, responding to specific events or periods of high bot activity. Others may be longer-term adjustments to the repository's infrastructure or configuration.

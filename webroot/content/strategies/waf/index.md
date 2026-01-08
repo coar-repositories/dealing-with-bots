@@ -1,12 +1,13 @@
 ---
 title: Web Application Firewall
 date: 2024-12-16
-draft: true
+draft: false
 description: |
   Configure a Web Application Firewall (WAF) to block known bad bots by identifying them from their user-agent strings (or other characteristics).
 weight: 500
 tools:
   - anubis
+  - cloudflare
 ---
 
 A Web Application Firewall (WAF) is a specific kind of firewall which filters and optionally blocks HTTP traffic to a web application such as a repository. A WAF can be configured to block known bad bots by identifying them from their user-agent strings (or other characteristics).

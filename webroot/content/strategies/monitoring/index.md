@@ -8,6 +8,7 @@ weight: 200
 tools:
   - grafana
   - goaccess
+  - cloudflare
 ---
 
 In order to protect your repository from badly-behaved bots, you will need to monitor incoming traffic.

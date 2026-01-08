@@ -7,6 +7,7 @@ description: |
 weight: 400
 tools:
   - firehol
+  - cloudflare
 #  - iptables
 #  - ufw
 ---

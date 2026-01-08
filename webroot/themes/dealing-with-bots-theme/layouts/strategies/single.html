@@ -15,9 +15,11 @@
 					<div class="col">
 						<h2 id="tool-specific-notes" class="strategy-resource-column">Examples of Tools Supporting this Strategy</h2>
               {{ range . }}
-								<h3 id="{{ .File.BaseFileName }}">{{ .Title }}</h3>
+								<h3 id="{{ .File.BaseFileName }}">
+										{{ .Title }}
+									<a href="{{ .Params.source }}"><i class="bi bi-arrow-up-right-square"></i></a>
+								</h3>
                 {{ .Content }}
-									<div class="read-more"><a href="{{ .Params.source }}">more information</a></div>
 								<hr/>
               {{ end }}
 					</div>

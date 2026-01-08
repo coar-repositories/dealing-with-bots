@@ -31,11 +31,6 @@ strategies:
     order: 5
     description: |
       Implement a "proof-of-work" CAPTCHA or similar to require the visitor to perform a modest amount of computational work before being granted access
-  cdn:
-    id: cdn
-    order: 6
-    description: |
-      Use a Content Delivery Network (CDN) to help manage and filter incoming traffic to your repository system.
 ---
 
 
