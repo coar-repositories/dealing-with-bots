@@ -31,6 +31,11 @@ strategies:
     order: 5
     description: |
       Configure a Web Application Firewall (WAF) to block known bad bots by identifying them from their user-agent strings (or other characteristics)
+  upgrade-infrastructure:
+    id: upgrade-infrastructure
+    order: 6
+    description: |
+      Evaluate the infrastructure (e.g. server hardware, network resources etc.) supporting your repository platform to determine its likely resilience under anticipated load.
 ---
 
 Some example actions which might be undertaken in this phase include:
