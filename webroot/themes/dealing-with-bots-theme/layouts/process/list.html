@@ -8,7 +8,7 @@
 					<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
 					<p>
               {{ .Description | markdownify }}
-						(<a href="{{ .Permalink }}">Read more</a>)
+						<a href="{{ .Permalink }}" class="read-more">[read more]</a>
 					</p>
 					<b>Available Strategies</b>
             {{ partial "strategies_for_process_phase.html" . }}

@@ -3,7 +3,7 @@ title: Protection
 date: 2024-12-16
 draft: false
 description: |
-  The *protection* phase is for actions carried out in response to particular requests, or patterns of requests. This involves monitoring traffic (e.g. through inspection of web logs). A busy repository deals with a continuous flow of incoming HTTP GET requests for its resources. These requests need to be evaluated to determine if the visitor is welcome, and to decide whether or not its behaviour is acceptable. The repository then needs to react, by deciding what action to take. 
+  The *protection* phase is for routine, ongoing measures designed to protect the repository system from badly-behaved bots. This phase involves monitoring traffic (e.g. through inspection of web logs). A busy repository deals with a continuous flow of incoming HTTP GET requests for its resources. These requests are evaluated to determine if the visitor is welcome, and to decide whether or not its behaviour is acceptable. Based on this evaluation, the repository then reacts - essentially either allowing or denying access to the requested resource.
 weight: 20
 strategies:
   monitoring:
@@ -38,9 +38,6 @@ strategies:
       Use a Content Delivery Network (CDN) to help manage and filter incoming traffic to your repository system.
 ---
 
-The *protection* phase is for actions carried out in response to particular requests, or patterns of requests. This involves monitoring traffic (e.g. through inspection of web logs).
-
-A busy repository deals with a continuous flow of incoming HTTP GET requests for its resources. These requests need to be evaluated to determine if the visitor is welcome, and to decide whether or not its behaviour is acceptable. The repository then needs to react, by deciding what action to take.
 
 This involves the following steps:
 

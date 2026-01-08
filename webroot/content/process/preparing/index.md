@@ -3,7 +3,7 @@ title: Preparation
 date: 2024-12-16
 draft: false
 description: |
-  The _preparation_ phase is for actions which can be carried out in advance of any traffic, to prepare the repository for dealing with requests. In this phase the repository service determines the types of visitors it wishes to welcome or make unwelcome. It then declares this through the medium of a robots.txt file, Terms of Service, firewall configurations etc.
+  The _preparation_ phase is for actions which can be carried out in advance of any traffic, to prepare the repository for dealing with requests. In this phase the repository service determines the types of visitors it wishes to welcome or make unwelcome.
 weight: 10
 strategies:
   upgrade-repository: 
@@ -33,9 +33,7 @@ strategies:
       Configure a Web Application Firewall (WAF) to block known bad bots by identifying them from their user-agent strings (or other characteristics)
 ---
 
-The _preparation_ phase is for actions which can be carried out in advance of any traffic, to prepare the repository for dealing with requests.
-
-In this phase the repository service determines the types of visitors it wishes to welcome or make unwelcome. As a rule, the _raison d'être_ for a repository is to provide wide and open access to its content - both to human visitors, and to well-behaved bots. Some example actions which might be undertaken in this phase include:
+Some example actions which might be undertaken in this phase include:
 
 - Creating and deploying a [robots.txt](/strategies/robots-txt/) file
 - Writing and publishing some [Terms of Service](/strategies/tos/) and ensuring that licensing is clearly articulated
