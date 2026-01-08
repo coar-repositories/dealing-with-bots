@@ -18,8 +18,8 @@
 	<link rel="stylesheet" href="{{ $bootstrapStyle.Permalink }}">
 
 
-    bootsrap-icons are not in the asset pipeline
-    	<link rel="stylesheet" href="/css/bootstrap-icons.min.css">
+    {{/*    bootsrap-icons are not in the asset pipeline*/}}
+	<link rel="stylesheet" href="/css/bootstrap-icons.min.css">
 
     {{ $datatablesBootstrapStyle := resources.Get "css/dataTables.bootstrap5.min.css" | resources.Fingerprint }}
 	<link rel="stylesheet" href="{{ $datatablesBootstrapStyle.Permalink }}">

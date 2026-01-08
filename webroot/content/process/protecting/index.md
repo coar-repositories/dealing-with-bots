@@ -26,11 +26,6 @@ strategies:
     order: 4
     description: |
       Adjust your Web Application Firewall (WAF) to block user-agent strings (or other characteristics) of newly identified bad bots
-  proof-of-work:
-    id: proof-of-work
-    order: 5
-    description: |
-      Implement a "proof-of-work" CAPTCHA or similar to require the visitor to perform a modest amount of computational work before being granted access
 ---
 
 
