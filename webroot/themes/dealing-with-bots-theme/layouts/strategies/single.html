@@ -13,10 +13,12 @@
 		<div class="row">
         {{ with $toolResources }}
 					<div class="col">
-						<h2 id="tool-specific-notes" class="strategy-resource-column">Tools</h2>
+						<h2 id="tool-specific-notes" class="strategy-resource-column">Examples of Tools Supporting this Strategy</h2>
               {{ range . }}
 								<h3 id="{{ .File.BaseFileName }}">{{ .Title }}</h3>
                 {{ .Content }}
+									<div class="read-more"><a href="{{ .Params.source }}">more information</a></div>
+								<hr/>
               {{ end }}
 					</div>
         {{ end }}

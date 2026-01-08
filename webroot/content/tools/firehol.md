@@ -2,9 +2,8 @@
 title: "FireHOL IP Feeds"
 date: 2024-12-16
 draft: false
+source: https://iplists.firehol.org
 ---
-
-[https://iplists.firehol.org](https://iplists.firehol.org)
 
 This site analyses all available security IP Feeds, mainly related to on-line attacks, on-line service abuse, malwares, botnets, command and control servers and other cybercrime activities, and maintains a list.
 

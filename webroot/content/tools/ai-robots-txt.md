@@ -2,6 +2,7 @@
 title: "AI Robots Txt"
 date: 2024-12-16
 draft: false
+source: https://github.com/ai-robots-txt/ai.robots.txt
 ---
 
 "ai.robots.txt" provides a list containing AI-related crawlers of all types, regardless of purpose (some of which have been sourced from [Dark Visitors](https://darkvisitors.com)).

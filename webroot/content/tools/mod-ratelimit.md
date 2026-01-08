@@ -2,6 +2,7 @@
 title: "Apache Module: mod_ratelimit"
 date: 2024-12-16
 draft: false
+source: https://httpd.apache.org/docs/current/mod/mod_ratelimit.html
 ---
 
 This is a module which can be added to the widely-use Apache web server. Many repositories use Apache as their webserver.
