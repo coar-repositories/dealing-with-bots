@@ -5,7 +5,7 @@
             {{ .Content }}
 				</div>
 				<div class="col-md-4">
-					<h3>Specific Github issues for discussion and suggestions</h3>
+					<h3>Github issues for discussion/suggestions</h3>
 					{{ $strategies := (where site.RegularPages "Section" "strategies") }}
 					<ul>
 						{{ range $strategies.ByWeight }}
