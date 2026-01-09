@@ -22,6 +22,7 @@ The Task Group has set itself the following goals:
 
 ## Membership
 - Kathleen Shearer (Convenor)
+- Rafael Bértoli
 - Gernot Deinzer
 - Michael Eadie
 - Masaharu Hayashi
