@@ -1,0 +1,18 @@
+{{ define "main" }}
+	<h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ $draftPages := where site.Pages "Draft" true }}
+  {{ with $draftPages }}
+		<h2>Draft Pages</h2>
+		<ul>
+        {{ range . }}
+					<li>
+						<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{ with .Params.editorial}}
+								&nbsp;- {{ . | markdownify }}
+              {{ end }}
+					</li>
+        {{ end }}
+		</ul>
+  {{ end }}
+{{ end }}

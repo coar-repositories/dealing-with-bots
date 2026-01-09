@@ -20,12 +20,18 @@
 				<td>
             {{ $strategiesUsingThisTool := where site.Pages "Params.tools" "intersect" (slice .File.BaseFileName) }}
             {{ if gt (len $strategiesUsingThisTool) 0 }}
-							<ul>
-                  {{ range $strategiesUsingThisTool }}
-										<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                  {{ end }}
-							</ul>
+                {{ $strategyLinks := slice }}
+                {{ range $strategiesUsingThisTool }}
+                    {{ $strategyLinks = $strategyLinks | append (printf "<a href=\"%s\">%s</a>" .Permalink .Title) }}
+                {{ end }}
+								{{ delimit $strategyLinks " | " | safeHTML  }}
             {{ end }}
+
+            {{/*							<ul>*/}}
+            {{/*                  {{ range $strategiesUsingThisTool }}*/}}
+            {{/*										<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>*/}}
+            {{/*                  {{ end }}*/}}
+            {{/*							</ul>*/}}
 				</td>
 			</tr>
     {{ end }}

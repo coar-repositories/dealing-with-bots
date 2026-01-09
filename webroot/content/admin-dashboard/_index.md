@@ -1,13 +1,11 @@
 ---
-title: Tools
+title: Admin Dashboard
 date: 2024-12-16
 draft: true
 menu:
   main:
+    weight: 10
     parent: Admin
-    name: Tools
-    weight: 90
 editorial: |
   Intentionally kept as draft so only visible in development mode and **not published**
 ---
-

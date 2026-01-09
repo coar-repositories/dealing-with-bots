@@ -6,6 +6,7 @@ description: |
   Actively monitor the network traffic to your repository
 weight: 200
 tools:
+  - fail2ban
   - grafana
   - goaccess
   - cloudflare
