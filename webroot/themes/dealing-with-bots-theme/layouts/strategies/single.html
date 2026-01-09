@@ -10,6 +10,9 @@
 
 		<h1>{{ .Title }}</h1>
     {{ .Content}}
+			<p>
+				<a href="{{ .Params.github_issue }}">Read (or add) comments on the GitHub issue for this strategy.</a>
+			</p>
 		<div class="row">
         {{ with $toolResources }}
 					<div class="col">
