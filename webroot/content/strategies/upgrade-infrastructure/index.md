@@ -5,6 +5,7 @@ draft: false
 description: |
   Upgrade the infrastructure (e.g. server hardware, network resources etc.) supporting your repository platform to increase its resilience under load.
 weight: 100
+github_issue: "https://github.com/coar-repositories/dealing-with-bots/issues/18"
 ---
 
 The effects of increased usage on your repository platform can often be mitigated by upgrading the underlying infrastructure. This may include:

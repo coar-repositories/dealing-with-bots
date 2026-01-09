@@ -5,6 +5,7 @@ draft: false
 description: |
   Actively monitor the network traffic to your repository
 weight: 200
+github_issue: "https://github.com/coar-repositories/dealing-with-bots/issues/6"
 tools:
   - fail2ban
   - grafana

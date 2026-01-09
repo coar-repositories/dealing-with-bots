@@ -5,6 +5,7 @@ draft: false
 description: |
   Require the visitor to perform a modest amount of computational work before being granted access
 weight: 200
+github_issue: "https://github.com/coar-repositories/dealing-with-bots/issues/17"
 tools:
   - anubis
   - cloudflare
