@@ -9,11 +9,11 @@ disablePathToLower: true
 services:
   rss:
     limit: 20
-outputFormats:
-  markdown:
-    mediaType: "text/markdown"
-    baseName: "index"
-    isPlainText: true
+#outputFormats:
+#  markdown:
+#    mediaType: "text/markdown"
+#    baseName: "index"
+#    isPlainText: true
 outputs:
   home:
     - html
