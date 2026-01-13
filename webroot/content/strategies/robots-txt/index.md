@@ -4,7 +4,7 @@ date: 2024-12-16
 draft: false
 description: |
   Configure and deploy a `robots.txt` file for your repository system.
-weight: 300
+weight: 100
 github_issue: "https://github.com/coar-repositories/dealing-with-bots/issues/5"
 tools:
   - ai-robots-txt

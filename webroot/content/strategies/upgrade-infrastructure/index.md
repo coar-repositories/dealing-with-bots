@@ -4,7 +4,7 @@ date: 2024-12-16
 draft: false
 description: |
   Upgrade the infrastructure (e.g. server hardware, network resources etc.) supporting your repository platform to increase its resilience under load.
-weight: 100
+weight: 700
 github_issue: "https://github.com/coar-repositories/dealing-with-bots/issues/18"
 ---
 

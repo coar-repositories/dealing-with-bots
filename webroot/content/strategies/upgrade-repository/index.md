@@ -4,7 +4,7 @@ date: 2024-12-16
 draft: false
 description: |
   Upgrade your repository system's software to the latest supported version to benefit from security patches, bug fixes, and performance improvements.
-weight: 100
+weight: 200
 github_issue: "https://github.com/coar-repositories/dealing-with-bots/issues/11"
 ---
 

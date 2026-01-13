@@ -4,7 +4,7 @@ date: 2024-12-16
 draft: false
 description: |
   Write and publish some Terms of Service and ensure that licensing is clearly articulated.
-weight: 700
+weight: 150
 github_issue: "https://github.com/coar-repositories/dealing-with-bots/issues/10"
 ---
 

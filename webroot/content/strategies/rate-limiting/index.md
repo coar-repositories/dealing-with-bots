@@ -4,7 +4,7 @@ date: 2024-12-16
 draft: false
 description: |
   Configure rate-limiting software to intercede when traffic from bots exceeds a certain threshold.
-weight: 600
+weight: 800
 github_issue: "https://github.com/coar-repositories/dealing-with-bots/issues/9"
 tools:
   - mod-ratelimit

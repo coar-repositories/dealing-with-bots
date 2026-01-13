@@ -4,7 +4,7 @@ date: 2024-12-16
 draft: false
 description: |
   Configure a firewall for the local network within which your repository system is hosted, to block IP addresses of known bad bots.
-weight: 400
+weight: 300
 github_issue: "https://github.com/coar-repositories/dealing-with-bots/issues/7"
 tools:
   - firehol
