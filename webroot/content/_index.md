@@ -8,7 +8,9 @@ menu:
 ---
 
 Over the past few years, repositories have been encountering a growing number of bots trying to access their resources. These bots, or crawlers, navigate the internet, gathering data and indexing information for search engines and large language models, as well as for other purposes. While some of these bots are rather innocuous, others are sufficiently aggressive that they cause service disruptions in repositories (and other scholarly communications infrastructures).
+
 Machine users have always been a critical constituency for repositories as search engines, aggregators, and other indexing services represent the predominant mechanisms whereby a repository’s resources are discovered. As such, it is very much in the community’s interest to ensure that repositories remain open and accessible to friendly bots and crawlers despite the increasingly aggressive nature of some bots.
+
 In early 2025, the [Confederation of Open Access Repositories (COAR)](https://coar-repositories.org) conducted a survey in early 2025 to assess the extent to which repositories were being adversely affected by a sudden and large increase in activity by "bots" - automated Web clients such as crawling or harvesting systems. The ensuing report - _[The impact of AI bots and crawlers on open repositories: Results of a COAR survey, April 2025](https://coar-repositories.org/wp-content/uploads/2025/06/Report-of-the-COAR-Survey-on-AI-Bots-June-2025-1.pdf)_ - was published in June 2025. It makes clear that:
 
 - the scale of traffic from badly-behaved bots presents a significant problem for open-access repositories
