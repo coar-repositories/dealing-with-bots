@@ -45,8 +45,8 @@ caches:
 params:
   gitHubRepoForSources: "https://github.com/coar-repositories/dealing-with-bots"
   headerMessages:
-    - type: danger
-      message: "This website is in active development and is **not yet ready to be used as a reference**. Please check back later."
+#    - type: danger
+#      message: "This website is in active development and is **not yet ready to be used as a reference**. Please check back later."
 markup:
   tableOfContents:
     endLevel: 4
