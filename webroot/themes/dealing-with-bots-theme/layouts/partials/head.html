@@ -4,7 +4,12 @@
 	<!-- The above 2 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     {{ if site.Params.enableAnalytics }}
-			<script defer data-domain="dealing-with-bots.coar-repositories.org" src="https://plausible.io/js/script.js"></script>
+			<!-- Privacy-friendly analytics by Plausible -->
+			<script async src="https://plausible.io/js/pa-Yc0puXzAp4K044Y7gQpSz.js"></script>
+			<script>
+          window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+          plausible.init()
+			</script>
     {{ end }}
 
 	<link href='https://fonts.googleapis.com' rel='preconnect'>
