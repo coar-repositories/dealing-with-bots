@@ -32,7 +32,7 @@ Repositories are dedicated to providing open access to information. For some yea
 
 The concept of "machine-access" encapsulates access to repositories by software and networked services which directly interact with repositories. COAR considers such machine users (bots) to be "first order" users of repository systems - alongside human users.
 
-## Web Traffic in 20224
+## Web Traffic in 2024
 
 In March 2025, Imperva (a subsidiary of Thales) published a report which has been much commented on in trade and mainstream media: _[BAD BOT REPORT: The Rapid Rise of Bots and the Unseen Risk for Business](https://www.imperva.com/resources/resource-library/reports/2025-bad-bot-report/)_. Bad behaviour is defined in broad terms and includes data scraping, brute force login attempts, scalping (automating buying or reserving products), DoS, spamming etc. The graph below is taken from that report.
 ![](/images/bad-bots-report-screenshot.png)
