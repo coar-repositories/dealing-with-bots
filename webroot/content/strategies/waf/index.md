@@ -8,6 +8,7 @@ weight: 400
 github_issue: "https://github.com/coar-repositories/dealing-with-bots/issues/8"
 tools:
   - anubis
+  - go-away
   - cloudflare
 ---
 
