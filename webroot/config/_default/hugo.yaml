@@ -43,6 +43,7 @@ caches:
     dir: :cacheDir/:project
     maxAge: 5s
 params:
+  author: "The Dealing With Bots COAR Task Group"
   gitHubRepoForSources: "https://github.com/coar-repositories/dealing-with-bots"
   headerMessages:
 #    - type: danger
