@@ -43,7 +43,7 @@ caches:
     dir: :cacheDir/:project
     maxAge: 5s
 params:
-  citation_authors: "Paul Walk; Dealing With Bots COAR Task Group, The"
+  citation_authors: "Paul Walk; The Dealing With Bots COAR Task Group"
   gitHubRepoForSources: "https://github.com/coar-repositories/dealing-with-bots"
   headerMessages:
 #    - type: danger
