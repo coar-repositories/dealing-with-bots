@@ -11,7 +11,8 @@
           plausible.init()
 			</script>
     {{ end }}
-	<meta name="author" content="{{site.Params.author}}">
+	<meta name="citation_authors" content="{{site.Params.citation_authors}}">
+	<meta name="author" content="{{site.Params.citation_authors}}">
 
 	{{ with .Description }}
 		<meta name="description" content="{{ . | markdownfy | htmlEscape }}">
