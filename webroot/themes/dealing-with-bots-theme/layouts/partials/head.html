@@ -15,7 +15,7 @@
 	<meta name="author" content="{{site.Params.citation_authors}}">
 
 	{{ with .Description }}
-		<meta name="description" content="{{ . | markdownfy | htmlEscape }}">
+		<meta name="description" content="{{ . | plainify | htmlEscape }}">
 	{{ end }}
 
 
