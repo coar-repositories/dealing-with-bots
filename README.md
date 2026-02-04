@@ -37,5 +37,3 @@ To run and view this website on a local server:
 2. `cd ./webroot`
 3. `hugo server`
 4. Point your browser at: [http://localhost:1313](http://localhost:1313)
-
-
