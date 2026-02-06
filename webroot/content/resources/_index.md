@@ -12,7 +12,7 @@ menu:
 - Aggressive AI Harvesting of Digital Resources - Community Groups - LYRASIS Wiki (no date). Available at: [https://wiki.lyrasis.org/display/cmtygp/Aggressive+AI+Harvesting+of+Digital+Resources](https://wiki.lyrasis.org/display/cmtygp/Aggressive+AI+Harvesting+of+Digital+Resources) (Accessed: 8 October 2025).
 - Casden, J. et al. (2025) Mitigating Aggressive Crawler Traffic in the Age of Generative AI: A Collaborative Approach from the University of North Carolina at Chapel Hill Libraries, The Code4Lib Journal [Preprint], (61). Available at: [https://journal.code4lib.org/articles/18489](https://journal.code4lib.org/articles/18489) (Accessed: 17 November 2025).
 - Bértoli, R. and Lira, A.J. (2025) Negative Impact of Bots on Digital Repository Usage Statistics: A Case Analysis and Applied Strategy, in. XIV Conferencia Internacional Biredial-ISTEC (Brasil, 8 al 10 de octubre de 2025). Available at: [http://sedici.unlp.edu.ar/handle/10915/188909](http://sedici.unlp.edu.ar/handle/10915/188909) (Accessed: 23 January 2026). 
-- Hingle, A. (2026) Getting Bots to Respect Boundaries. Available at: https://internet.exchangepoint.tech/content/files/2026/02/Getting-Bots-to-Respect-Boundaries.pdf (Accessed: 6 February 2026).
+- Hingle, A. (2026) Getting Bots to Respect Boundaries. Available at: [https://internet.exchangepoint.tech/content/files/2026/02/Getting-Bots-to-Respect-Boundaries.pdf](https://internet.exchangepoint.tech/content/files/2026/02/Getting-Bots-to-Respect-Boundaries.pdf) (Accessed: 6 February 2026).
 
 
 ## Broader/Philosophical Considerations
