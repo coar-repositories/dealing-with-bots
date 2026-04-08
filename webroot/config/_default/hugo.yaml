@@ -1,6 +1,6 @@
 ---
 theme: "dealing-with-bots-theme"
-languageCode: "en-gb"
+locale: "en-gb"
 uglyURLs: false
 title: "Dealing With Bots: A COAR Resource for Repository Managers"
 enableRobotsTXT: true
@@ -32,17 +32,9 @@ menus:
       weight: 11
 taxonomies:
   tag: "tags"
-caches:
-  getjson:
-    dir: :cacheDir/:project
-    maxAge: 5s
-  getresource:
-    dir: :cacheDir/:project
-    maxAge: 5s
-  getcsv:
-    dir: :cacheDir/:project
-    maxAge: 5s
 params:
+  author:
+    email: paul@antleaf.com
   citation_authors: "Paul Walk; The Dealing With Bots COAR Task Group"
   gitHubRepoForSources: "https://github.com/coar-repositories/dealing-with-bots"
   headerMessages:
